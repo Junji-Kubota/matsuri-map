@@ -1,0 +1,2665 @@
+{
+ "1": {
+  "name": "さっぽろ雪まつり",
+  "type": "yuki",
+  "lead": "大通公園を中心に、大小の雪像と氷像が街を埋め尽くす冬の北海道最大の催し。夜はライトアップやプロジェクションマッピングで、昼とはまったく違う表情になります。",
+  "tips": [
+   "大雪像は昼と夜の両方を見るのがおすすめ。夜のほうが人は多め",
+   "すすきの会場の氷像は夜の明かりに映える。つどーむ会場は滑り台など体験型",
+   "足元は凍結路面。滑り止め付きの靴か、着脱式スパイクがあると安心"
+  ],
+  "trivia": "1950年に地元の中高生が6つの雪像を作ったのが始まりとされます。",
+  "ease": {
+   "level": "honki",
+   "prep": "3〜4か月前",
+   "note": "飛行機と宿の確保が肝心。会場は無料で自由に見て回れる。",
+   "move": [
+    3
+   ],
+   "stay": [
+    3
+   ],
+   "view": [
+    1
+   ],
+   "body": [
+    2,
+    "真冬の屋外。防寒必須"
+   ],
+   "join": [
+    "see",
+    "見るだけ（つどーむは遊べる）"
+   ],
+   "ic": "札樽自動車道 札幌北ICから約15分"
+  },
+  "audience": {
+   "n": "約253万人",
+   "days": "8日間",
+   "year": "2026年",
+   "scale": 5,
+   "src": "https://www.nikkei.com/article/DGXZQOFC121760S6A210C2000000/"
+  },
+  "offset": [
+   -9,
+   0
+  ],
+  "photos": [
+   {
+    "file": "photos/1/1.jpg",
+    "author": "Eckhard Pecher",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Odori_Park_Sapporo_Snow_Festival_2007.JPG",
+    "title": "File:Odori Park Sapporo Snow Festival 2007.JPG"
+   },
+   {
+    "file": "photos/1/2.jpg",
+    "author": "Daigaku2051",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sapporo_Snow_festival.JPG",
+    "title": "File:Sapporo Snow festival.JPG"
+   },
+   {
+    "file": "photos/1/3.jpg",
+    "author": "ja:User:京浜にけ",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sapporo_Snow_Festival_Odori-Site_At_Night_Panorama_1.jpg",
+    "title": "File:Sapporo Snow Festival Odori-Site At Night Panorama 1.jpg"
+   }
+  ]
+ },
+ "2": {
+  "name": "青森ねぶた祭",
+  "type": "akari",
+  "lead": "武者や神話を題材にした巨大な灯籠「ねぶた」が、跳ね踊る「ハネト」とともに夜の街を練り歩きます。笛と太鼓の囃子と「ラッセラー」の掛け声が一体になる熱気は格別です。",
+  "tips": [
+   "正装のハネト衣装を着れば、観光客でもハネトとして参加できる。衣装は市内で購入・レンタル可",
+   "運行ルート沿いに有料観覧席がある。確実に座って見たいなら早めに確保",
+   "最終日は昼の運行のあと、夜にねぶたが船で海上を運行し、花火大会と重なる"
+  ],
+  "trivia": "優秀なねぶたには「ねぶた大賞」などの賞が贈られ、制作者は「ねぶた師」と呼ばれます。",
+  "ease": {
+   "level": "honki",
+   "prep": "半年前",
+   "note": "宿が争奪戦。有料席があると安心。衣装を着ればハネトとして参加できる。",
+   "move": [
+    3
+   ],
+   "stay": [
+    3
+   ],
+   "view": [
+    2,
+    "有料席があると安心"
+   ],
+   "body": [
+    2,
+    "夜が本番"
+   ],
+   "join": [
+    "prep",
+    "衣装を着れば参加できる"
+   ],
+   "ic": "青森自動車道 青森中央ICから約3km"
+  },
+  "audience": {
+   "n": "約101万人",
+   "days": "6日間",
+   "year": "2025年",
+   "scale": 4,
+   "src": "https://www.nikkei.com/article/DGXZQOCC150TP0V11C25A0000000/"
+  },
+  "photos": [
+   {
+    "file": "photos/2/1.jpg",
+    "author": "Marie-Sophie Mejan",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Aomori,_Nebuta-matsuri_23.jpg",
+    "title": "File:Aomori, Nebuta-matsuri 23.jpg"
+   },
+   {
+    "file": "photos/2/2.jpg",
+    "author": "Marie-Sophie Mejan",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Aomori,_Nebuta-matsuri_28.jpg",
+    "title": "File:Aomori, Nebuta-matsuri 28.jpg"
+   },
+   {
+    "file": "photos/2/3.jpg",
+    "author": "Marie-Sophie Mejan",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Aomori,_Nebuta-matsuri_37.jpg",
+    "title": "File:Aomori, Nebuta-matsuri 37.jpg"
+   }
+  ]
+ },
+ "3": {
+  "name": "秋田竿燈まつり",
+  "type": "akari",
+  "lead": "たくさんの提灯を下げた竿燈を、差し手が手のひらや額、肩、腰に乗せて絶妙なバランスで操ります。稲穂に見立てた灯りが夜空に揺れる、五穀豊穣を願う祭りです。",
+  "tips": [
+   "夜の竿燈演技は山王大通りが会場。有料観覧席もある",
+   "昼竿燈（妙技会）では差し手の技を間近で競技として見られる",
+   "演技のあとに竿燈に触れたり、持たせてもらえたりする「ふれあいタイム」がある"
+  ],
+  "trivia": "最も大きい竿燈は高さ約12m、重さ約50kgにもなります。",
+  "ease": {
+   "level": "honki",
+   "prep": "半年前",
+   "note": "ねぶた・七夕と同じ時期で宿が取りにくい。夜の演技は有料席でじっくり。",
+   "move": [
+    3
+   ],
+   "stay": [
+    3
+   ],
+   "view": [
+    2,
+    "有料席があると安心"
+   ],
+   "body": [
+    2,
+    "夜が本番"
+   ],
+   "join": [
+    "see",
+    "見るだけ（竿燈に触れられる時間あり）"
+   ],
+   "ic": "秋田自動車道 秋田中央ICから約10分"
+  },
+  "audience": {
+   "n": "約111万人",
+   "days": "4日間",
+   "year": "2026年",
+   "scale": 4,
+   "src": "https://www.sakigake.jp/news/article/20260806AK0048/"
+  },
+  "photos": [
+   {
+    "file": "photos/3/1.jpg",
+    "author": "STB-1 at Japanese Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Akita_Kanto.jpg",
+    "title": "File:Akita Kanto.jpg"
+   },
+   {
+    "file": "photos/3/2.jpg",
+    "author": "掬茶",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Akita_Kanto_Festival_2023a.jpg",
+    "title": "File:Akita Kanto Festival 2023a.jpg"
+   },
+   {
+    "file": "photos/3/3.jpg",
+    "author": "https://search.find47.jp/ja/i/unXp4",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Akita_kanto_matsuri_xl.jpg",
+    "title": "File:Akita kanto matsuri xl.jpg"
+   }
+  ]
+ },
+ "4": {
+  "name": "仙台七夕まつり",
+  "type": "akari",
+  "lead": "商店街のアーケードに、和紙で作った豪華な七夕飾りが隙間なく吊り下げられます。吹き流しをくぐりながら歩くだけで楽しい、昼に見る祭りです。",
+  "tips": [
+   "飾りは各商店が手作り。店ごとの趣向の違いを見比べると楽しい",
+   "中心部は昼がいちばんの見頃。夜は前夜祭の花火（8月5日）がある",
+   "東北三大祭りはねぶた・竿燈と日程が重なるので、まとめて回る旅程が組みやすい"
+  ],
+  "trivia": "伝統の「七つ飾り」には、短冊は学問、紙衣は健康、というようにそれぞれ願いが込められています。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "日帰りなら1か月前、泊まるなら3か月前",
+   "ic": "東北自動車道 仙台宮城ICから約15分",
+   "note": "新幹線で日帰りもできる。昼に歩いて見る祭りなので観覧は気楽。",
+   "move": [
+    2,
+    "新幹線で約1時間半"
+   ],
+   "stay": [
+    3,
+    "泊まるなら争奪戦"
+   ],
+   "view": [
+    1,
+    "歩きながら見られる"
+   ],
+   "body": [
+    2,
+    "真夏の昼。暑さ対策を"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "約211万人",
+   "days": "3日間",
+   "year": "2025年",
+   "scale": 5,
+   "src": "https://www.sendaitanabata.com/about/turnout/"
+  },
+  "photos": [
+   {
+    "file": "photos/4/1.jpg",
+    "author": "Nikm",
+    "license": "Public domain",
+    "license_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Sendai_Tanabata_Festival_2010.jpg",
+    "title": "File:Sendai Tanabata Festival 2010.jpg"
+   },
+   {
+    "file": "photos/4/2.jpg",
+    "author": "掬茶",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sendai_Tanabata_2023.jpg",
+    "title": "File:Sendai Tanabata 2023.jpg"
+   },
+   {
+    "file": "photos/4/3.jpg",
+    "author": "掬茶",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sendai_Tanabata_2023b.jpg",
+    "title": "File:Sendai Tanabata 2023b.jpg"
+   }
+  ]
+ },
+ "5": {
+  "name": "三社祭",
+  "type": "mikoshi",
+  "lead": "浅草神社の例大祭で、下町浅草が三日間神輿一色になります。町内神輿が勢ぞろいする連合渡御や、本社神輿の早朝の宮出しは、江戸っ子の祭りの熱量そのものです。",
+  "tips": [
+   "日曜早朝の本社神輿「宮出し」が最大の山場。境内は大混雑するので、周辺の路上で見るのが現実的",
+   "金曜の大行列やびんざさら舞など、神輿以外の伝統行事もある",
+   "浅草寺周辺は終日混雑。移動は徒歩前提で"
+  ],
+  "trivia": "「三社」の名は、浅草神社に祀られる、浅草寺の起源に関わる3人の人物に由来します。",
+  "ease": {
+   "level": "furatto",
+   "prep": "直前でOK",
+   "ic": "首都高速6号向島線 向島ICから約10分",
+   "note": "電車で行ける地元の大祭。宮出しを見るなら日曜の早朝に。",
+   "move": [
+    1
+   ],
+   "stay": [
+    1
+   ],
+   "view": [
+    2,
+    "大混雑"
+   ],
+   "body": [
+    2,
+    "宮出しは早朝"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "約180万人",
+   "days": "3日間",
+   "year": "例年",
+   "scale": 5,
+   "src": "https://asakusa.net/3%E6%97%A5%E9%96%93%E3%81%AB%E3%82%8F%E3%81%9F%E3%82%8A%E7%B4%84180%E4%B8%87%E4%BA%BA%E3%81%AE%E4%BA%BA%E5%87%BA%E6%B5%85%E8%8D%89%E3%81%A3%E5%AD%90%E3%81%8C%E4%B8%80%E5%B9%B4%E4%B8%AD%E6%A5%BD/"
+  },
+  "photos": [
+   {
+    "file": "photos/5/1.jpg",
+    "author": "Guilhem Vellut from Annecy, France",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Asakusa_Shrine_@_Sanja_Matsuri_@_Asakusa_(14251368903).jpg",
+    "title": "File:Asakusa Shrine @ Sanja Matsuri @ Asakusa (14251368903).jpg"
+   },
+   {
+    "file": "photos/5/2.jpg",
+    "author": "Guilhem Vellut from Annecy, France",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Asakusa_Shrine_@_Sanja_Matsuri_@_Asakusa_(14227891301).jpg",
+    "title": "File:Asakusa Shrine @ Sanja Matsuri @ Asakusa (14227891301).jpg"
+   },
+   {
+    "file": "photos/5/3.jpg",
+    "author": "Guilhem Vellut from Annecy, France",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sanja_Matsuri_@_Asakusa_(14044643287).jpg",
+    "title": "File:Sanja Matsuri @ Asakusa (14044643287).jpg"
+   }
+  ]
+ },
+ "6": {
+  "name": "川越まつり",
+  "type": "dashi",
+  "lead": "蔵造りの町並みを、江戸型の豪華な山車が曳き廻されます。山車同士が向かい合って囃子を競う「曳っかわせ」が見せ場です。",
+  "tips": [
+   "夜の曳っかわせが最も盛り上がる。提灯に照らされた山車と町並みが幻想的",
+   "都心から電車で1時間ほど。自宅から日帰りできる数少ない大型祭り",
+   "蔵造りの一番街は歩くのも困難なほど混む。脇道の交差点が狙い目"
+  ],
+  "trivia": "2016年、「山・鉾・屋台行事」の一つとしてユネスコ無形文化遺産に登録されました（川越氷川祭の山車行事）。",
+  "ease": {
+   "level": "furatto",
+   "prep": "直前でOK",
+   "ic": "関越自動車道 川越ICから約2.9km",
+   "note": "日帰りでき、観覧も無料。夜の曳っかわせまで見て帰れる。",
+   "move": [
+    1
+   ],
+   "stay": [
+    1
+   ],
+   "view": [
+    2,
+    "一番街は大混雑"
+   ],
+   "body": [
+    1,
+    "昼から夜まで。無理なく楽しめる"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "約73万人",
+   "days": "2日間",
+   "year": "例年",
+   "scale": 4,
+   "src": "https://prtimes.jp/main/html/rd/p/000000531.000006166.html"
+  },
+  "photos": [
+   {
+    "file": "photos/6/1.jpg",
+    "author": "江戸村のとくぞう",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kawagoe_Festival10.jpg",
+    "title": "File:Kawagoe Festival10.jpg"
+   },
+   {
+    "file": "photos/6/2.jpg",
+    "author": "江戸村のとくぞう",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kawagoe_Festival_20221015a3.jpg",
+    "title": "File:Kawagoe Festival 20221015a3.jpg"
+   },
+   {
+    "file": "photos/6/3.jpg",
+    "author": "MitsunoriEgawa",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Saitama_Kawagoe_matsuri_1_m.jpg",
+    "title": "File:Saitama Kawagoe matsuri 1 m.jpg"
+   }
+  ]
+ },
+ "7": {
+  "name": "秩父夜祭",
+  "type": "dashi",
+  "lead": "京都の祇園祭、飛騨の高山祭と並ぶ日本三大曳山祭の一つ。極寒の夜、提灯で飾った笠鉾と屋台が、冬の花火を背に急坂の団子坂を曳き上げられます。",
+  "tips": [
+   "3日夜の団子坂の曳き上げがクライマックス。場所取りは早い時間から",
+   "12月の秩父の夜はかなり冷える。防寒は真冬の装備で",
+   "西武線の特急は予約が早く埋まる。帰りの時間を先に決めておく"
+  ],
+  "trivia": "冬の花火大会を兼ねていて、12月に大規模な打ち上げ花火が見られる珍しい祭りです。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "1か月前（特急の予約）",
+   "ic": "関越自動車道 花園ICから約30km（50〜60分）",
+   "note": "日帰りできるが、帰りの特急は早めに予約。真冬の夜なので防寒をしっかり。",
+   "move": [
+    1,
+    "特急で日帰り圏"
+   ],
+   "stay": [
+    1,
+    "日帰りなら不要"
+   ],
+   "view": [
+    2,
+    "団子坂は場所取りが必要"
+   ],
+   "body": [
+    3,
+    "12月の夜。極寒"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "約25万人",
+   "days": "2日間",
+   "year": "報道",
+   "scale": 2,
+   "src": "https://news.yahoo.co.jp/articles/aa62dfc9cebad5fc9953941a7a0fae61e4b044ec"
+  },
+  "photos": [
+   {
+    "file": "photos/7/1.jpg",
+    "author": "ちちびあん",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E7%A7%A9%E7%88%B6%E5%A4%9C%E7%A5%AD2.jpg",
+    "title": "File:秩父夜祭2.jpg"
+   },
+   {
+    "file": "photos/7/2.jpg",
+    "author": "ちちびあん",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:ChichibuFes1.jpg",
+    "title": "File:ChichibuFes1.jpg"
+   },
+   {
+    "file": "photos/7/3.jpg",
+    "author": "Katorisi",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chichibu_Night_Festival._Passing_the_floats_of_Nakamachi_and_Kamimachi._Chichibu_city,Japan.jpg",
+    "title": "File:Chichibu Night Festival. Passing the floats of Nakamachi and Kamimachi. Chichibu city,Japan.jpg"
+   }
+  ]
+ },
+ "8": {
+  "name": "高山祭（春・山王祭）",
+  "type": "dashi",
+  "lead": "日枝神社の例祭で、春の高山祭。金具や彫刻で飾った豪華な屋台が曳き揃えられ、からくり人形の奉納も行われます。",
+  "tips": [
+   "からくり奉納は時間が決まっている。演目の時刻を事前に確認",
+   "夜祭では提灯を灯した屋台が古い町並みを巡る",
+   "高山は宿が少なめ。祭り当日の宿は早めに押さえたい"
+  ],
+  "trivia": "秋の八幡祭とあわせて「高山祭」と呼ばれ、ユネスコ無形文化遺産「山・鉾・屋台行事」の一つです。",
+  "ease": {
+   "level": "honki",
+   "prep": "半年前",
+   "ic": "東海北陸自動車道（中部縦貫道）高山西ICから約10分",
+   "note": "高山は宿が少なく、祭りの日は早く埋まる。観覧自体は気軽。",
+   "move": [
+    3,
+    "乗り継ぎで4時間超"
+   ],
+   "stay": [
+    3
+   ],
+   "view": [
+    1,
+    "町並みで自由に見られる"
+   ],
+   "body": [
+    2,
+    "春の夜は冷える"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "約17万人",
+   "days": "2日間",
+   "year": "報道",
+   "scale": 2,
+   "src": "https://www.chunichi.co.jp/article/1237755"
+  },
+  "offset": [
+   -12,
+   0
+  ],
+  "photos": [
+   {
+    "file": "photos/8/1.jpg",
+    "author": "Chme82",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Takayama_Matsuri-2017-5.jpg",
+    "title": "File:Takayama Matsuri-2017-5.jpg"
+   },
+   {
+    "file": "photos/8/2.jpg",
+    "author": "Chme82",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Takayama_Matsuri-2017-2.jpg",
+    "title": "File:Takayama Matsuri-2017-2.jpg"
+   },
+   {
+    "file": "photos/8/3.jpg",
+    "author": "Chme82",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Takayama_Matsuri-2017-3.jpg",
+    "title": "File:Takayama Matsuri-2017-3.jpg"
+   }
+  ]
+ },
+ "9": {
+  "name": "郡上おどり",
+  "type": "odori",
+  "lead": "夏の間およそ30夜にわたって、城下町のどこかで毎晩踊りが開かれます。見るより踊る祭りで、誰でも輪に入れるのが特徴です。",
+  "tips": [
+   "お盆の4日間は「徹夜おどり」。夜8時頃から明け方まで踊り続ける",
+   "踊りは10種類。「かわさき」「春駒」あたりから覚えると入りやすい",
+   "下駄で踊るのが郡上流。町で郡上下駄を買って参加するのも楽しみの一つ"
+  ],
+  "trivia": "「郡上踊」は2022年、「風流踊」の一つとしてユネスコ無形文化遺産に登録されました。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "2か月前（お盆は早めに）",
+   "ic": "東海北陸自動車道 郡上八幡ICから市街地まですぐ",
+   "note": "7月の平日の夜ならかなり気軽。お盆の徹夜おどりは体力勝負で宿も混む。",
+   "move": [
+    3,
+    "乗り継ぎで4時間前後"
+   ],
+   "stay": [
+    2,
+    "お盆は早めに"
+   ],
+   "view": [
+    1,
+    "踊りの輪に入れる"
+   ],
+   "body": [
+    2,
+    "夜が本番（徹夜おどりは明け方まで）"
+   ],
+   "join": [
+    "drop",
+    "飛び入りで踊れる"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "約30夜",
+   "year": "",
+   "scale": 3,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/9/1.jpg",
+    "author": "tsuda",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Gujo_odori_Yagura.jpg",
+    "title": "File:Gujo odori Yagura.jpg"
+   },
+   {
+    "file": "photos/9/2.jpg",
+    "author": "郡上市観光課",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Gujo_Odori2.jpg",
+    "title": "File:Gujo Odori2.jpg"
+   },
+   {
+    "file": "photos/9/3.jpg",
+    "author": "tsuda",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Gujo_odori_2009-08-16.jpg",
+    "title": "File:Gujo odori 2009-08-16.jpg"
+   }
+  ]
+ },
+ "10": {
+  "name": "おわら風の盆",
+  "type": "odori",
+  "lead": "胡弓と三味線の哀愁ある調べにのって、編み笠で顔を隠した踊り手が、坂の町・八尾の通りを静かに流し歩きます。華やかさより、しっとりとした風情を味わう祭りです。",
+  "tips": [
+   "本祭の3日間は大混雑。本番前の8月下旬に開かれる「前夜祭」は比較的落ち着いて見られる",
+   "見どころは深夜。観光客が減った夜更けに、各町の自然な町流しに出会える",
+   "宿は近隣に少ないので、富山市内に泊まって通うのが一般的"
+  ],
+  "trivia": "「風の盆」の名前には、立春から数えて二百十日頃の風の災いを鎮める願いが込められているといわれます。",
+  "ease": {
+   "level": "honki",
+   "prep": "半年前",
+   "ic": "北陸自動車道 富山西ICから約25分",
+   "note": "小さな町に人が集中し、宿は争奪戦。本当の見どころは深夜の町流し。",
+   "move": [
+    2,
+    "北陸新幹線で富山経由"
+   ],
+   "stay": [
+    3
+   ],
+   "view": [
+    2,
+    "本祭は大混雑。夜更けが狙い目"
+   ],
+   "body": [
+    3,
+    "深夜が見どころ"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "約25万人",
+   "days": "3日間",
+   "year": "例年",
+   "scale": 2,
+   "src": "https://www.kikumasamune.shop/blog/?p=4081"
+  },
+  "photos": [
+   {
+    "file": "photos/10/1.jpg",
+    "author": "さかおり",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Owara_Kaze_no_Bon._Traditional_musical_instruments.jpg",
+    "title": "File:Owara Kaze no Bon. Traditional musical instruments.jpg"
+   },
+   {
+    "file": "photos/10/2.jpg",
+    "author": "さかおり",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Owara_Kaze_no_Bon._Kagami-Mchi_branch._Sep_3,_2016.G.jpg",
+    "title": "File:Owara Kaze no Bon. Kagami-Mchi branch. Sep 3, 2016.G.jpg"
+   },
+   {
+    "file": "photos/10/3.jpg",
+    "author": "JohnNewton8",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Owara_Kaze_no_bon_2013_(3).jpg",
+    "title": "File:Owara Kaze no bon 2013 (3).jpg"
+   }
+  ]
+ },
+ "11": {
+  "name": "祇園祭",
+  "type": "dashi",
+  "lead": "八坂神社の祭礼で、7月の1か月間にわたって行事が続きます。「動く美術館」と呼ばれる山鉾の巡行と、宵山の駒形提灯と祇園囃子が京都の夏の風物詩です。",
+  "tips": [
+   "前祭の宵山（7月14〜16日）は四条通などが歩行者天国になる。夕方からが雰囲気十分",
+   "巡行は四条河原町や河原町御池の「辻回し」が見せ場。有料観覧席もある",
+   "後祭（24日の巡行）は前祭よりやや落ち着いていて、じっくり見やすい"
+  ],
+  "trivia": "山鉾巡行は前祭23基・後祭11基。ユネスコ無形文化遺産「山・鉾・屋台行事」の一つです。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "3か月前",
+   "ic": "名神高速道路 京都東ICから約20分",
+   "note": "7月の京都は宿が高く取りにくい。宵山は無料で歩けるが、巡行は有料席も検討。",
+   "move": [
+    2,
+    "新幹線で約2時間15分"
+   ],
+   "stay": [
+    3
+   ],
+   "view": [
+    2,
+    "巡行は有料席も"
+   ],
+   "body": [
+    2,
+    "真夏の京都。暑さが厳しい"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "宵山1晩で約28〜30万人",
+   "days": "7月の1か月",
+   "year": "報道",
+   "scale": 5,
+   "src": "https://www.kyoto-np.co.jp/articles/-/1752620"
+  },
+  "photos": [
+   {
+    "file": "photos/11/1.jpg",
+    "author": "江戸村のとくぞう",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Gion_Matsuri_2017-5.jpg",
+    "title": "File:Gion Matsuri 2017-5.jpg"
+   },
+   {
+    "file": "photos/11/2.jpg",
+    "author": "江戸村のとくぞう",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Gion_Matsuri_2017-5a.jpg",
+    "title": "File:Gion Matsuri 2017-5a.jpg"
+   },
+   {
+    "file": "photos/11/3.jpg",
+    "author": "Z3144228",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Gion_Matsuri-03.jpg",
+    "title": "File:Gion Matsuri-03.jpg"
+   }
+  ]
+ },
+ "12": {
+  "name": "天神祭",
+  "type": "mikoshi",
+  "lead": "大阪天満宮の祭りで、日本三大祭りの一つ。本宮の夜、約100隻の船が大川を行き交う船渡御と奉納花火が重なり、「火と水の祭典」と呼ばれます。",
+  "tips": [
+   "船渡御は川沿いの遊歩道から見られる。桜宮橋や川崎橋のあたりが見やすい",
+   "奉納花火も同時に楽しめるが、川沿いは夕方から場所取りが始まる",
+   "昼の陸渡御では、神輿や地車、傘踊りなどの行列が街を進む"
+  ],
+  "trivia": "始まりは平安時代の10世紀半ばとされ、1000年以上の歴史があります。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "2か月前",
+   "ic": "阪神高速12号守口線 南森町出入口からすぐ（約340m）",
+   "note": "大阪は宿の数が多く比較的取りやすい。船渡御と花火は夕方から場所取り。",
+   "move": [
+    2,
+    "新幹線で約2時間半"
+   ],
+   "stay": [
+    2
+   ],
+   "view": [
+    2,
+    "川沿いは場所取り"
+   ],
+   "body": [
+    2,
+    "夜が本番。暑さも"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "2日間",
+   "year": "",
+   "scale": 5,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/12/1.jpg",
+    "author": "Mr.ちゅらさん",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:2024_Tenjin_Matsuri_Festival_Funatogyo_3.jpg",
+    "title": "File:2024 Tenjin Matsuri Festival Funatogyo 3.jpg"
+   },
+   {
+    "file": "photos/12/2.jpg",
+    "author": "Mr.ちゅらさん",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bunraku_Float_Boat_Tenjin_Matsuri_Festival_2025-2.jpg",
+    "title": "File:Bunraku Float Boat Tenjin Matsuri Festival 2025-2.jpg"
+   },
+   {
+    "file": "photos/12/3.jpg",
+    "author": "Mr.ちゅらさん",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Osaka_Central_Food_Markets_Float_Boat_at_Tenjin_Matsuri_Festival_2025.jpg",
+    "title": "File:Osaka Central Food Markets Float Boat at Tenjin Matsuri Festival 2025.jpg"
+   }
+  ]
+ },
+ "13": {
+  "name": "岸和田だんじり祭",
+  "type": "dashi",
+  "lead": "重さ4トンを超える地車（だんじり）を、曳き手が全速力で走らせ、交差点で直角に向きを変える「やりまわし」が名物。屋根の上で舞う大工方にも目を奪われます。",
+  "tips": [
+   "やりまわしはカンカン場など交差点付近が見どころ。沿道の立ち位置には十分注意",
+   "宵宮の夜は提灯を灯しただんじりがゆっくり曳かれ、昼とは違う情緒がある",
+   "9月祭礼（旧市・春木）と10月祭礼で地区が違う。どちらに行くか先に決める"
+  ],
+  "trivia": "祭礼の前には試験曳きがあり、その日から町の空気が一変します。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "2か月前",
+   "ic": "阪神高速4号湾岸線 岸和田南ICから約5分",
+   "note": "大阪市内に泊まって通える。やりまわしは迫力満点だが、見る位置の安全に注意。",
+   "move": [
+    2,
+    "新大阪から約1時間"
+   ],
+   "stay": [
+    2,
+    "大阪市内泊が現実的"
+   ],
+   "view": [
+    2,
+    "立ち位置に注意"
+   ],
+   "body": [
+    2,
+    "一日中立ち見"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "約56万人",
+   "days": "2日間",
+   "year": "2009年",
+   "scale": 3,
+   "src": "https://ja.wikipedia.org/wiki/%E5%B2%B8%E5%92%8C%E7%94%B0%E3%81%A0%E3%82%93%E3%81%98%E3%82%8A%E7%A5%AD"
+  },
+  "photos": [
+   {
+    "file": "photos/13/1.jpg",
+    "author": "Kounosu",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kishiwada-Danjiri-Matsuri_in_the_night_Osaka_Japan.jpg",
+    "title": "File:Kishiwada-Danjiri-Matsuri in the night Osaka Japan.jpg"
+   },
+   {
+    "file": "photos/13/2.jpg",
+    "author": "Kounosu",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kishiwada-Danjiri-Matsuri_Osaka_Japan.jpg",
+    "title": "File:Kishiwada-Danjiri-Matsuri Osaka Japan.jpg"
+   },
+   {
+    "file": "photos/13/3.jpg",
+    "author": "Hhaithait",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Haruki_danjiri_2011.jpg",
+    "title": "File:Haruki danjiri 2011.jpg"
+   }
+  ]
+ },
+ "14": {
+  "name": "西条酒まつり",
+  "type": "sake",
+  "lead": "酒蔵が並ぶ西条の街で、全国の日本酒を飲み比べられる酒の祭典。2日間で多くの人が訪れる、酒好きにはたまらない祭りです。",
+  "tips": [
+   "全国の酒を集めた「酒ひろば」は有料入場。飲み比べるならここが本命",
+   "西条の酒蔵の蔵開きや限定酒も楽しみ。蔵ごとの仕込み水を飲み比べるのも一興",
+   "ビール旅と組み合わせるなら、広島市内のクラフトビールと合わせた1泊旅程も"
+  ],
+  "trivia": "西条は兵庫の灘、京都の伏見と並ぶ日本三大酒どころの一つといわれます。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "2か月前",
+   "ic": "山陽自動車道 西条ICから約5分",
+   "note": "昼の祭りで体は楽。移動が長いので広島の観光やビールとセットにしたい。",
+   "move": [
+    3,
+    "新幹線で約4時間"
+   ],
+   "stay": [
+    2,
+    "広島市内泊も"
+   ],
+   "view": [
+    1,
+    "会場は歩いて回れる"
+   ],
+   "body": [
+    1,
+    "昼が中心"
+   ],
+   "join": [
+    "drop",
+    "飲み比べて参加"
+   ]
+  },
+  "audience": {
+   "n": "約22万人",
+   "days": "2日間",
+   "year": "報道",
+   "scale": 2,
+   "src": "https://www.chugoku-np.co.jp/articles/-/726837"
+  }
+ },
+ "15": {
+  "name": "阿波おどり",
+  "type": "odori",
+  "lead": "三味線や鉦、太鼓の二拍子の「ぞめき」にのって、「連」と呼ばれる踊りの集団が街中を踊り進みます。「踊る阿呆に見る阿呆」の言葉どおり、見ているとつい踊りたくなる祭りです。",
+  "tips": [
+   "演舞場は有料と無料がある。有名連の踊りは有料演舞場でじっくり見られる",
+   "飛び入りできる「にわか連」に参加すれば、観光客でも踊れる",
+   "期間中の徳島市内の宿は争奪戦。周辺都市や大阪からの日帰りも選択肢"
+  ],
+  "trivia": "男踊りは低い姿勢で豪快に、女踊りは編み笠をかぶって優雅に踊るのが特徴です。",
+  "ease": {
+   "level": "honki",
+   "prep": "半年前",
+   "ic": "徳島自動車道 徳島ICから約15〜20分",
+   "note": "徳島市内の宿は争奪戦。にわか連に入れば、観光客でも踊れる。",
+   "move": [
+    3,
+    "飛行機か長距離移動"
+   ],
+   "stay": [
+    3
+   ],
+   "view": [
+    2,
+    "有料演舞場があると安心"
+   ],
+   "body": [
+    2,
+    "夜が本番。暑さも"
+   ],
+   "join": [
+    "drop",
+    "にわか連で飛び入り"
+   ]
+  },
+  "audience": {
+   "n": "約111万人",
+   "days": "期間中",
+   "year": "2025年",
+   "scale": 4,
+   "src": "https://www.topics.or.jp/articles/-/1297566"
+  },
+  "photos": [
+   {
+    "file": "photos/15/1.jpg",
+    "author": "Rosino",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Awa-odori_2008_Tokushima.jpg",
+    "title": "File:Awa-odori 2008 Tokushima.jpg"
+   },
+   {
+    "file": "photos/15/2.jpg",
+    "author": "Rosino",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Awa-odori_2008_Tokushima_05.jpg",
+    "title": "File:Awa-odori 2008 Tokushima 05.jpg"
+   },
+   {
+    "file": "photos/15/3.jpg",
+    "author": "KQuhen",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Awa_Odori_Tokushima_City_so-odori_02.jpg",
+    "title": "File:Awa Odori Tokushima City so-odori 02.jpg"
+   }
+  ]
+ },
+ "16": {
+  "name": "よさこい祭り",
+  "type": "odori",
+  "lead": "鳴子を手にしたチームが、各地の競演場や演舞場で踊りを披露します。衣装も音楽も振り付けも自由で、伝統とダンスの間にあるような躍動感が魅力です。",
+  "tips": [
+   "鳴子を持って前進しながら踊る、というのが基本ルール。あとはチームごとに個性を競う",
+   "最終日の全国大会・後夜祭では、受賞チームの踊りが見られる",
+   "中心部の追手筋本部競演場は迫力満点。商店街の競演場は近くで見やすい"
+  ],
+  "trivia": "1954年、戦後の不況を吹き飛ばそうと始まりました。今では「YOSAKOI」として全国に広がっています。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "3か月前",
+   "ic": "高知自動車道 高知ICから約15分",
+   "note": "無料の競演場が多く観覧は気軽。踊るならチームへの参加が必要。",
+   "move": [
+    3,
+    "飛行機"
+   ],
+   "stay": [
+    2
+   ],
+   "view": [
+    1,
+    "無料の競演場が多い"
+   ],
+   "body": [
+    2,
+    "真夏の屋外"
+   ],
+   "join": [
+    "prep",
+    "チームに入れば踊れる"
+   ]
+  },
+  "audience": {
+   "n": "約97万人",
+   "days": "4日間",
+   "year": "2025年",
+   "scale": 4,
+   "src": "https://news.yahoo.co.jp/articles/d6e455fa88e090c7adf109180b8f6511a4b03030"
+  },
+  "photos": [
+   {
+    "file": "photos/16/1.jpg",
+    "author": "工房 やまもも",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Yosakoi_Performers_at_Kochi_Yosakoi_2006_17.jpg",
+    "title": "File:Yosakoi Performers at Kochi Yosakoi 2006 17.jpg"
+   },
+   {
+    "file": "photos/16/2.jpg",
+    "author": "工房 やまもも",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Yosakoi_Performers_at_Kochi_Yosakoi_Matsuri_2005_65.jpg",
+    "title": "File:Yosakoi Performers at Kochi Yosakoi Matsuri 2005 65.jpg"
+   }
+  ]
+ },
+ "17": {
+  "name": "博多祇園山笠",
+  "type": "dashi",
+  "lead": "博多の男たちが、重さ1トンの舁き山笠を担いで博多の街を駆け抜けます。7月1日から市内各所に豪華な飾り山笠が立ち、祭りの気分は2週間続きます。",
+  "tips": [
+   "最終日の「追い山笠」は早朝4時59分にスタート。前日から近くに泊まるのが確実",
+   "櫛田神社の桟敷席は抽選や販売があるが入手困難。沿道で十分に迫力がある",
+   "期間中は街の飾り山笠めぐりも楽しい。昼に歩いて回れる"
+  ],
+  "trivia": "ユネスコ無形文化遺産「山・鉾・屋台行事」の一つで、770年以上続くとされます。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "2〜3か月前",
+   "ic": "福岡都市高速 呉服町ランプから約5分",
+   "note": "福岡は宿が多いが追い山前夜は混む。追い山は早朝4時59分スタート。飾り山めぐりだけなら気軽。",
+   "move": [
+    3,
+    "飛行機"
+   ],
+   "stay": [
+    2,
+    "追い山前夜は混む"
+   ],
+   "view": [
+    2,
+    "早朝の場所取り"
+   ],
+   "body": [
+    3,
+    "追い山は早朝"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "300万人超",
+   "days": "15日間",
+   "year": "報道",
+   "scale": 5,
+   "src": "https://fukuoka-leapup.jp/tour/202307.9129"
+  },
+  "photos": [
+   {
+    "file": "photos/17/1.jpg",
+    "author": "Pontafon",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hakata_gion_yamakasa_2005_01.jpg",
+    "title": "File:Hakata gion yamakasa 2005 01.jpg"
+   },
+   {
+    "file": "photos/17/2.jpg",
+    "author": "Pontafon",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hakata_gion_yamakasa_2006_02.jpg",
+    "title": "File:Hakata gion yamakasa 2006 02.jpg"
+   },
+   {
+    "file": "photos/17/3.jpg",
+    "author": "Hirho",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hakata_Gion_Yamakasa_the_10th_decorated_float_Watanabe-d%C5%8Dri-1-ch%C5%8Dme_Ch%C5%AB%C5%8D-ku_Fukuoka_City_20230711.jpg",
+    "title": "File:Hakata Gion Yamakasa the 10th decorated float Watanabe-dōri-1-chōme Chūō-ku Fukuoka City 20230711.jpg"
+   }
+  ]
+ },
+ "18": {
+  "name": "長崎くんち",
+  "type": "odori",
+  "lead": "諏訪神社の秋の大祭。踊町（おどりちょう）が龍踊りや鯨の潮吹き、コッコデショなどの奉納踊を披露し、異国情緒と町の誇りが交じり合います。",
+  "tips": [
+   "有料の桟敷席は入手困難。各踊町が街を回る「庭先回り」なら無料で間近に見られる",
+   "掛け声「モッテコーイ（アンコール）」で観客がもう一度をせがむのが長崎流",
+   "踊町は7年に一度の当番制。その年の出し物を事前に確認しておくと楽しい"
+  ],
+  "trivia": "「くんち」の由来には、旧暦9月9日の「九日（くにち）」からという説があります。",
+  "ease": {
+   "level": "honki",
+   "prep": "半年前",
+   "ic": "長崎自動車道 長崎芒塚ICから約10分",
+   "note": "桟敷席は入手困難だが、庭先回りなら無料で間近に。宿も早めに。",
+   "move": [
+    3,
+    "飛行機"
+   ],
+   "stay": [
+    3
+   ],
+   "view": [
+    2,
+    "桟敷席は困難。庭先回りが狙い目"
+   ],
+   "body": [
+    2,
+    "残暑の中を歩く"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "3日間",
+   "year": "",
+   "scale": 3,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/18/1.jpg",
+    "author": "Marufish",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nagasaki_Kunchi.jpg",
+    "title": "File:Nagasaki Kunchi.jpg"
+   },
+   {
+    "file": "photos/18/2.jpg",
+    "author": "Houjyou-Minori",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kunchi_kasaboko.jpg",
+    "title": "File:Kunchi kasaboko.jpg"
+   },
+   {
+    "file": "photos/18/3.jpg",
+    "author": "Marine-Blue",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jaodori_of_Nagasaki_Kunchi.jpg",
+    "title": "File:Jaodori of Nagasaki Kunchi.jpg"
+   }
+  ]
+ },
+ "19": {
+  "name": "唐津くんち",
+  "type": "dashi",
+  "lead": "唐津神社の秋の例大祭。赤獅子や鯛、兜などをかたどった14台の漆の曳山が、城下町を巡行します。",
+  "tips": [
+   "2日夜の「宵曳山」は、提灯を灯した曳山が暗い町を進む幻想的な場面",
+   "3日の御旅所神幸では、曳山を砂地に曳き込む迫力ある場面がある",
+   "曳山展示場では祭り期間外でも曳山を見られる"
+  ],
+  "trivia": "ユネスコ無形文化遺産「山・鉾・屋台行事」の一つで、曳山は国の重要有形民俗文化財にも指定されています。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "3か月前",
+   "ic": "西九州自動車道 唐津ICから約12分",
+   "note": "唐津は宿が少なく、福岡市内に泊まって通う手も。沿道で自由に見られる。",
+   "move": [
+    3,
+    "飛行機＋電車"
+   ],
+   "stay": [
+    2,
+    "福岡泊も選択肢"
+   ],
+   "view": [
+    1,
+    "沿道で見られる"
+   ],
+   "body": [
+    2,
+    "宵曳山は夜"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "約57万人",
+   "days": "3日間",
+   "year": "2025年",
+   "scale": 3,
+   "src": "https://www.sagatv.co.jp/news/archives/2025110421500"
+  },
+  "photos": [
+   {
+    "file": "photos/19/1.jpg",
+    "author": "MC MasterChef",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Taiyama.jpg",
+    "title": "File:Taiyama.jpg"
+   },
+   {
+    "file": "photos/19/2.jpg",
+    "author": "不明",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Hikiyama.jpg",
+    "title": "File:Hikiyama.jpg"
+   },
+   {
+    "file": "photos/19/3.jpg",
+    "author": "Z001",
+    "license": "Public domain",
+    "license_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Tamatori-Jishi.JPG",
+    "title": "File:Tamatori-Jishi.JPG"
+   }
+  ]
+ },
+ "20": {
+  "name": "那覇大綱挽",
+  "type": "tsuna",
+  "lead": "那覇の国道58号を封鎖し、世界最大級の大綱を東西に分かれて大勢の人が引き合います。誰でも綱引きに参加できるのが最大の魅力です。",
+  "tips": [
+   "綱引きは参加自由。観客が一斉に綱をつかんで引く一体感がこの祭りの醍醐味",
+   "終わったあとの綱を切って持ち帰ると縁起がよいとされる",
+   "沖縄旅行と組み合わせやすい。10月の沖縄は海もまだ楽しめる季節"
+  ],
+  "trivia": "大綱はギネス世界記録に「世界一の藁綱」として認定されています。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "2か月前",
+   "ic": "沖縄自動車道 那覇ICから国際通りまで約5.9km（約19分）",
+   "note": "沖縄旅行と組み合わせやすい。綱引きは誰でも飛び入りで参加できる。",
+   "move": [
+    3,
+    "飛行機"
+   ],
+   "stay": [
+    2,
+    "連休と重なるので早めに"
+   ],
+   "view": [
+    1,
+    "綱の周りで見られる"
+   ],
+   "body": [
+    2,
+    "暑さと人の密集"
+   ],
+   "join": [
+    "drop",
+    "綱引きに飛び入り"
+   ]
+  },
+  "audience": {
+   "n": "約33万人",
+   "days": "3日間",
+   "year": "2024年",
+   "scale": 3,
+   "src": "https://www.rbc.co.jp/corp/corp_news/pr241016/"
+  },
+  "photos": [
+   {
+    "file": "photos/20/1.jpg",
+    "author": "投稿者が作成",
+    "license": "Public domain",
+    "license_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Okimoto-naha-tsunahiki001.jpg",
+    "title": "File:Okimoto-naha-tsunahiki001.jpg"
+   },
+   {
+    "file": "photos/20/2.jpg",
+    "author": "投稿者が撮影",
+    "license": "Public domain",
+    "license_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Naha_Tsunahiki20081012.JPG",
+    "title": "File:Naha Tsunahiki20081012.JPG"
+   },
+   {
+    "file": "photos/20/3.jpg",
+    "author": "那覇市観光協会",
+    "license": "CC BY-SA 2.1 jp",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Naha_Tug_of_War.jpg",
+    "title": "File:Naha Tug of War.jpg"
+   }
+  ]
+ },
+ "21": {
+  "name": "高山祭（秋・八幡祭）",
+  "type": "dashi",
+  "lead": "桜山八幡宮の例祭で、秋の高山祭。11台の屋台が曳き揃えられ、からくり奉納や、提灯で飾った屋台が夜の町を巡る宵祭が見どころです。",
+  "tips": [
+   "宵祭（9日夜）の提灯屋台は秋ならではの見どころ",
+   "屋台の曳き廻しで屋台が町を進む様子は、古い町並みと重なって絵になる",
+   "高山祭屋台会館では、祭り以外の時期も実物の屋台を見られる"
+  ],
+  "trivia": "春の山王祭と同じく、ユネスコ無形文化遺産「山・鉾・屋台行事」の一つです。",
+  "ease": {
+   "level": "honki",
+   "prep": "半年前",
+   "ic": "東海北陸自動車道（中部縦貫道）高山西ICから約10分",
+   "note": "春と同じく宿が少なく早く埋まる。観覧自体は町並みで気軽に。",
+   "move": [
+    3,
+    "乗り継ぎで4時間超"
+   ],
+   "stay": [
+    3
+   ],
+   "view": [
+    1,
+    "町並みで自由に見られる"
+   ],
+   "body": [
+    2,
+    "秋の夜は冷える"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "約25万人",
+   "days": "2日間",
+   "year": "2016年",
+   "scale": 2,
+   "src": "https://ja.wikipedia.org/wiki/%E9%AB%98%E5%B1%B1%E7%A5%AD"
+  },
+  "offset": [
+   12,
+   0
+  ]
+ },
+ "22": {
+  "name": "大曲の花火（全国花火競技大会）",
+  "type": "hanabi",
+  "lead": "全国の花火師が「内閣総理大臣賞」を目指して技を競う、日本で唯一の花火競技大会。昼花火という独自の部門があり、色煙で空を彩る芸術的な演目は他の花火大会では見られません。",
+  "tips": [
+   "昼花火（17:10〜）は競技の華。夜花火より早い時間なので、遅くとも15時には会場入りしたい",
+   "花火の打ち上げが低めなので、高台より河川敷の会場内で見るほうが迫力がある",
+   "桟敷席は例年6月頃に先行販売が始まり、人気の席はすぐ完売する"
+  ],
+  "trivia": "1910年に始まった、日本最古級の花火競技大会です。最高賞は内閣総理大臣賞。",
+  "ease": {
+   "level": "honki",
+   "prep": "半年前（桟敷席は6月頃には確保）",
+   "ic": "秋田自動車道 大曲ICから約7km（当日は渋滞注意）",
+   "note": "宿・桟敷席とも争奪戦。会場は無料エリアもあるが、迫力を求めるなら有料席を早めに。",
+   "move": [
+    3,
+    "秋田新幹線で大曲駅下車"
+   ],
+   "stay": [
+    3
+   ],
+   "view": [
+    2,
+    "無料エリアもあるが有料席が安心"
+   ],
+   "body": [
+    2,
+    "夕方から夜。屋外で長時間"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "約60万人",
+   "days": "1日間",
+   "year": "2023年",
+   "scale": 3,
+   "src": "https://ja.wikipedia.org/wiki/%E5%85%A8%E5%9B%BD%E8%8A%B1%E7%81%AB%E7%AB%B6%E6%8A%80%E5%A4%A7%E4%BC%9A"
+  },
+  "photos": [
+   {
+    "file": "photos/22/1.jpg",
+    "author": "不明",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Omagari_Hanabi_2006.JPG",
+    "title": "File:Omagari Hanabi 2006.JPG"
+   },
+   {
+    "file": "photos/22/2.jpg",
+    "author": "不明",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Omagari_Hanabi_2007_Hiru.JPG",
+    "title": "File:Omagari Hanabi 2007 Hiru.JPG"
+   },
+   {
+    "file": "photos/22/3.jpg",
+    "author": "Drivephotographer",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Fireball_at_Omagari_station.jpg",
+    "title": "File:Fireball at Omagari station.jpg"
+   }
+  ]
+ },
+ "23": {
+  "name": "野沢温泉の道祖神祭り",
+  "type": "hi",
+  "lead": "日本三大火祭りの一つ。巨大な社殿を守る厄年の男衆と、松明を手に火をつけようとする村人との激しい攻防が、雪の夜に繰り広げられます。",
+  "tips": [
+   "会場に入れるのは村民と村内の宿泊者だけ。祭りに行くなら野沢温泉に泊まるのが前提",
+   "火の粉が飛ぶので、燃えにくい服装で。ビン・缶の持ち込みは禁止",
+   "祭りは神事。観光イベントではないので、進行の妨げにならない位置で"
+  ],
+  "trivia": "国の重要無形民俗文化財に指定されています。",
+  "ease": {
+   "level": "honki",
+   "prep": "半年前（スキーシーズンで宿が埋まる）",
+   "note": "村に泊まらないと会場に入れない。スキー旅行と組み合わせるのが現実的。",
+   "move": [
+    2,
+    "新幹線＋バスで約2時間半"
+   ],
+   "stay": [
+    3,
+    "村内に泊まることが観覧の条件"
+   ],
+   "view": [
+    2,
+    "村民と宿泊者のみ観覧できる"
+   ],
+   "body": [
+    3,
+    "真冬の夜。火の粉も飛ぶ"
+   ],
+   "join": [
+    "see",
+    "見るだけ（火付けは村民のみ）"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "1夜",
+   "year": "",
+   "scale": 1,
+   "est": true,
+   "src": ""
+  }
+ },
+ "24": {
+  "name": "横手かまくら",
+  "type": "yuki",
+  "lead": "雪で作ったかまくらの中に水神様を祀り、子どもたちが「はいってたんせ」と甘酒やお餅でもてなしてくれます。雪の中に灯りがともる、静かで温かい小正月行事です。",
+  "tips": [
+   "かまくらの中に招き入れてもらえるのが醍醐味。お賽銭を用意しておくと気持ちよく",
+   "夜はかまくらと、川原に並ぶミニかまくらの灯りが幻想的",
+   "2026年から日程が2月第2金・土曜日に変わった。古い情報に注意"
+  ],
+  "trivia": "約450年の歴史があるとされる小正月の行事です。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "2か月前",
+   "note": "観覧は気軽だが、移動が長く真冬の夜。雪道の装備を整えて。",
+   "move": [
+    3,
+    "新幹線と在来線で約4時間"
+   ],
+   "stay": [
+    2
+   ],
+   "view": [
+    1,
+    "かまくらに入れてもらえる"
+   ],
+   "body": [
+    3,
+    "真冬の雪国の夜"
+   ],
+   "join": [
+    "drop",
+    "かまくらに入ってもてなしを受けられる"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "2日間",
+   "year": "",
+   "scale": 2,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/24/1.jpg",
+    "author": "Rarisan",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mini_Kamakura_(Yokote%27s_Winter_Festival)_at_Yokote-minami_elementary_school.jpg",
+    "title": "File:Mini Kamakura (Yokote's Winter Festival) at Yokote-minami elementary school.jpg"
+   },
+   {
+    "file": "photos/24/2.jpg",
+    "author": "Rarisan",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Kamakura_at_Yokote_Castle_202402.jpg",
+    "title": "File:Kamakura at Yokote Castle 202402.jpg"
+   },
+   {
+    "file": "photos/24/3.jpg",
+    "author": "Rarisan",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Mini_Kamakura_at_Janosaki_riverbed_of_Yokote_River_202502.jpg",
+    "title": "File:Mini Kamakura at Janosaki riverbed of Yokote River 202502.jpg"
+   }
+  ]
+ },
+ "25": {
+  "name": "長崎ランタンフェスティバル",
+  "type": "akari",
+  "lead": "中国の旧正月を祝う行事が始まりで、長崎の街中が約1万5千個の色鮮やかなランタンで彩られます。中国雑技や龍踊り、皇帝パレードなども見られる冬の長崎の風物詩です。",
+  "tips": [
+   "会場は新地中華街・湊公園・中央公園など市内に点在。夕方から歩いて巡るのが楽しい",
+   "皇帝パレードや媽祖行列は週末に行われることが多い。日程を確認",
+   "ちゃんぽんや角煮まんなど、中華街の食べ歩きもセットで"
+  ],
+  "trivia": "もとは長崎新地中華街の春節祭で、1994年から規模を広げて今の形になりました。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "2か月前",
+   "note": "期間が長く、週末を外せば比較的ゆったり。冬の長崎旅行と組み合わせやすい。",
+   "move": [
+    3,
+    "飛行機"
+   ],
+   "stay": [
+    2
+   ],
+   "view": [
+    1,
+    "街歩きで自由に見られる"
+   ],
+   "body": [
+    2,
+    "夜が見頃"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "約2週間",
+   "year": "",
+   "scale": 4,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/25/1.jpg",
+    "author": "katorisi",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nagasaki_lantern_Festival,Nagasaki-city,Japan.jpg",
+    "title": "File:Nagasaki lantern Festival,Nagasaki-city,Japan.jpg"
+   },
+   {
+    "file": "photos/25/2.jpg",
+    "author": "STA3816",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nagasaki_Lantern_Festival_2016_Minato_Park.jpg",
+    "title": "File:Nagasaki Lantern Festival 2016 Minato Park.jpg"
+   },
+   {
+    "file": "photos/25/3.jpg",
+    "author": "Balon Greyjoy",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:20190202_Nagasaki_Chinese_New_Year_lantern-7.jpg",
+    "title": "File:20190202 Nagasaki Chinese New Year lantern-7.jpg"
+   }
+  ]
+ },
+ "26": {
+  "name": "東大寺二月堂 修二会（お水取り）",
+  "type": "hi",
+  "lead": "奈良時代から一度も途絶えず続く東大寺二月堂の法要。夜ごと、大きな松明が二月堂の舞台を駆け抜け、火の粉を散らします。",
+  "tips": [
+   "お松明は毎夜19時頃から（日によって時刻が異なる）。二月堂の下の芝生から見上げる",
+   "12日の籠松明は特に大きく、人も非常に多い。ゆったり見るなら12日以外",
+   "火の粉を浴びると無病息災といわれる。夜の奈良は冷えるので防寒を"
+  ],
+  "trivia": "752年に始まったとされ、1270回以上途切れずに続いている「不退の行法」です。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "1〜2か月前",
+   "note": "期間が2週間あるので日を選べる。奈良や京都の観光と組み合わせやすい。",
+   "move": [
+    2,
+    "新幹線と近鉄で約3時間"
+   ],
+   "stay": [
+    2,
+    "奈良は宿少なめ。京都・大阪泊も"
+   ],
+   "view": [
+    2,
+    "二月堂下は混雑。12日は特に"
+   ],
+   "body": [
+    2,
+    "3月の夜は冷える"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "14日間",
+   "year": "",
+   "scale": 2,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/26/1.jpg",
+    "author": "ignis",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Todaiji_Syunie_Nara_JPN_001.JPG",
+    "title": "File:Todaiji Syunie Nara JPN 001.JPG"
+   },
+   {
+    "file": "photos/26/2.jpg",
+    "author": "Degueulasse",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bamboos_for_the_torches_of_Todaiji_Shunie_201502_01.jpg",
+    "title": "File:Bamboos for the torches of Todaiji Shunie 201502 01.jpg"
+   },
+   {
+    "file": "photos/26/3.jpg",
+    "author": "Degueulasse",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bamboos_for_the_torches_of_Todaiji_Shunie_201502_02.jpg",
+    "title": "File:Bamboos for the torches of Todaiji Shunie 201502 02.jpg"
+   }
+  ]
+ },
+ "27": {
+  "name": "長浜曳山まつり",
+  "type": "dashi",
+  "lead": "豪華な曳山の舞台の上で、男の子たちが本格的な歌舞伎「子ども狂言」を演じます。「動く美術館」と呼ばれる曳山と、城下町の風情を一緒に楽しめる春の祭りです。",
+  "tips": [
+   "子ども狂言の奉納は14日・15日。1日に何度も演じるので、町を巡りながら見られる",
+   "15日夜の「戻り山」は、提灯を灯した曳山が町へ帰っていく情緒ある場面",
+   "長浜城や黒壁スクエアの散策とセットで。琵琶湖の春も楽しめる"
+  ],
+  "trivia": "ユネスコ無形文化遺産「山・鉾・屋台行事」の一つです。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "1か月前",
+   "note": "観覧は気軽。米原で乗り換えれば、京都観光とも組み合わせられる。",
+   "move": [
+    2,
+    "新幹線で米原経由 約2時間半"
+   ],
+   "stay": [
+    2
+   ],
+   "view": [
+    1,
+    "曳山の舞台を間近で見られる"
+   ],
+   "body": [
+    1,
+    "昼が中心"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "9日間",
+   "year": "",
+   "scale": 2,
+   "est": true,
+   "src": ""
+  }
+ },
+ "28": {
+  "name": "くらやみ祭",
+  "type": "mikoshi",
+  "lead": "府中の大國魂神社の例大祭で、武蔵国の総社のお祭り。5日の夜、大太鼓に先導された8基の神輿が一斉に渡御する「おいで」が最大の見せ場です。",
+  "tips": [
+   "5日夕方からの神輿渡御が本番。大太鼓の音が町中に響く",
+   "期間中は参道のけやき並木に屋台が並ぶ。昼の屋台めぐりだけでも楽しい",
+   "3日の競馬式（こまくらべ）など、神輿以外の古い神事もある"
+  ],
+  "trivia": "かつては神輿が深夜の暗闇の中で渡御したことから「くらやみ祭」と呼ばれます。",
+  "ease": {
+   "level": "furatto",
+   "prep": "直前でOK",
+   "note": "調布からすぐ。仕事帰りや散歩がてら、思い立ったら行ける。",
+   "move": [
+    1,
+    "京王線ですぐ"
+   ],
+   "stay": [
+    1
+   ],
+   "view": [
+    2,
+    "5日夜は大混雑"
+   ],
+   "body": [
+    2,
+    "神輿渡御は夜"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "期間中",
+   "year": "",
+   "scale": 4,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/28/1.jpg",
+    "author": "江戸村のとくぞう",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Okunitama-jinja-24.jpg",
+    "title": "File:Okunitama-jinja-24.jpg"
+   },
+   {
+    "file": "photos/28/2.jpg",
+    "author": "Guilhem Vellut from Annecy, France",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Taiko_drum_@_Kurayami_Matsuri_(Darkness_Festival)_@_Okunitama_Shrine_@_Fuchu_(14117597851).jpg",
+    "title": "File:Taiko drum @ Kurayami Matsuri (Darkness Festival) @ Okunitama Shrine @ Fuchu (14117597851).jpg"
+   },
+   {
+    "file": "photos/28/3.jpg",
+    "author": "Guilhem Vellut from Annecy, France",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kurayami_Matsuri_(Darkness_Festival)_@_Okunitama_Shrine_@_Fuchu_(14121222814).jpg",
+    "title": "File:Kurayami Matsuri (Darkness Festival) @ Okunitama Shrine @ Fuchu (14121222814).jpg"
+   }
+  ]
+ },
+ "29": {
+  "name": "神田祭",
+  "type": "mikoshi",
+  "lead": "神田明神の祭りで、日本三大祭り・江戸三大祭りの一つ。平安装束の行列が都心を巡る神幸祭と、200基もの町神輿が次々に宮入りする神輿宮入が見どころです。",
+  "tips": [
+   "本祭は2年に1度（奇数年）。神幸祭の行列は神田・日本橋・秋葉原を1日かけて巡る",
+   "神輿宮入の日曜日は、神田明神の境内が担ぎ手と観客で埋まる",
+   "秋葉原を行列が通る光景は神田祭ならでは"
+  ],
+  "trivia": "山王祭と1年おきに行う取り決めがあり、そのため本祭は2年に1度です。",
+  "ease": {
+   "level": "furatto",
+   "prep": "直前でOK",
+   "note": "電車ですぐ。神幸祭の行列は沿道のどこからでも見られる。",
+   "move": [
+    1
+   ],
+   "stay": [
+    1
+   ],
+   "view": [
+    2,
+    "宮入の境内は大混雑"
+   ],
+   "body": [
+    1,
+    "昼が中心"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "本祭の週",
+   "year": "",
+   "scale": 3,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/29/1.jpg",
+    "author": "江戸村のとくぞう",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kanda_Matsuri_20230514c.jpg",
+    "title": "File:Kanda Matsuri 20230514c.jpg"
+   },
+   {
+    "file": "photos/29/2.jpg",
+    "author": "江戸村のとくぞう",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kanda_Matsuri_20230514a.jpg",
+    "title": "File:Kanda Matsuri 20230514a.jpg"
+   },
+   {
+    "file": "photos/29/3.jpg",
+    "author": "江戸村のとくぞう",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kanda_Matsuri_20230514h.jpg",
+    "title": "File:Kanda Matsuri 20230514h.jpg"
+   }
+  ]
+ },
+ "30": {
+  "name": "山王祭",
+  "type": "mikoshi",
+  "lead": "日枝神社の祭りで、江戸三大祭りの一つ。偶数年の神幸祭では、王朝装束の約300mの行列が皇居周辺や銀座など都心を巡ります。",
+  "tips": [
+   "神幸祭は偶数年のみ。見たいなら2028年を狙う",
+   "神幸祭のない年も、期間中は境内の茅の輪くぐりや稚児行列などの行事がある",
+   "都心の真ん中を平安絵巻が進む光景は写真映えする"
+  ],
+  "trivia": "江戸時代には将軍が上覧したことから「天下祭」とも呼ばれました。",
+  "ease": {
+   "level": "furatto",
+   "prep": "直前でOK",
+   "note": "都心なので気軽。神幸祭は偶数年なので、見る年を選ぶのがコツ。",
+   "move": [
+    1
+   ],
+   "stay": [
+    1
+   ],
+   "view": [
+    1,
+    "行列は沿道で見られる"
+   ],
+   "body": [
+    1,
+    "昼が中心"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "11日間",
+   "year": "",
+   "scale": 2,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/30/1.jpg",
+    "author": "江戸村のとくぞう (Edomura no Tokuzo)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hie_jinjya-8.jpg",
+    "title": "File:Hie jinjya-8.jpg"
+   },
+   {
+    "file": "photos/30/2.jpg",
+    "author": "江戸村のとくぞう (Edomura no Tokuzo)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hie_jinjya-9.jpg",
+    "title": "File:Hie jinjya-9.jpg"
+   }
+  ]
+ },
+ "31": {
+  "name": "盛岡さんさ踊り",
+  "type": "odori",
+  "lead": "太鼓を打ち鳴らしながら踊る「さんさ踊り」の大パレード。1万個を超える和太鼓の音が盛岡の中心街に響き渡ります。",
+  "tips": [
+   "パレードの最後には観客も参加できる「輪踊り」がある。飛び入りで踊れる",
+   "有料観覧席もあるが、沿道でも十分楽しめる",
+   "東北の夏祭りの初日にあたるので、ねぶた・竿燈・七夕とつなげる旅程の起点に"
+  ],
+  "trivia": "「和太鼓同時演奏」の世界一としてギネス世界記録に認定されたことがあります。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "3か月前",
+   "note": "東北の夏祭りと時期が重なり宿が混む。ほかの祭りとのハシゴも検討を。",
+   "move": [
+    2,
+    "新幹線で約2時間10分"
+   ],
+   "stay": [
+    2,
+    "東北の祭りの時期で混む"
+   ],
+   "view": [
+    2,
+    "有料席もある"
+   ],
+   "body": [
+    2,
+    "夜が本番"
+   ],
+   "join": [
+    "drop",
+    "輪踊りに飛び入りできる"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "4日間",
+   "year": "",
+   "scale": 4,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/31/1.jpg",
+    "author": "Marho",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sansa_Odori_Morioka_2017.jpg",
+    "title": "File:Sansa Odori Morioka 2017.jpg"
+   },
+   {
+    "file": "photos/31/2.jpg",
+    "author": "https://www.youtube.com/channel/UC9Pk5-OwKuz-Uii7RIIU4dA",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sansa_Bulls.jpg",
+    "title": "File:Sansa Bulls.jpg"
+   }
+  ]
+ },
+ "32": {
+  "name": "山形花笠まつり",
+  "type": "odori",
+  "lead": "紅花をあしらった花笠を手に、「ヤッショ、マカショ」の掛け声で1万人を超える踊り手が山形の目抜き通りを踊り進みます。",
+  "tips": [
+   "飛び入りで参加できる「飛び入り花笠踊り」の枠がある。花笠は会場で借りられることも",
+   "有料観覧席のほか、沿道でも見られる",
+   "ねぶたや七夕と日程が重なるので、東北夏祭りのハシゴに組み込みやすい"
+  ],
+  "trivia": "東北の代表的な夏祭りの一つで、1963年に始まりました。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "2か月前",
+   "note": "観覧も参加も気軽。仙台七夕と同じ日程なので組み合わせやすい。",
+   "move": [
+    2,
+    "新幹線で約2時間半"
+   ],
+   "stay": [
+    2
+   ],
+   "view": [
+    1,
+    "沿道で見られる"
+   ],
+   "body": [
+    2,
+    "夜が本番"
+   ],
+   "join": [
+    "drop",
+    "飛び入りで踊れる枠がある"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "3日間",
+   "year": "",
+   "scale": 4,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/32/1.jpg",
+    "author": "f_a_r_e_w_e_l_l",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:YAMAGATA_HANAGASA_MATSURI_2008_Day3_(2741671076).jpg",
+    "title": "File:YAMAGATA HANAGASA MATSURI 2008 Day3 (2741671076).jpg"
+   },
+   {
+    "file": "photos/32/2.jpg",
+    "author": "f_a_r_e_w_e_l_l",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:YAMAGATA_HANAGASA_MATSURI_2008_Day3_(2740825277).jpg",
+    "title": "File:YAMAGATA HANAGASA MATSURI 2008 Day3 (2740825277).jpg"
+   },
+   {
+    "file": "photos/32/3.jpg",
+    "author": "f_a_r_e_w_e_l_l",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:YAMAGATA_HANAGASA_MATSURI_2008_Day3_(2741704620).jpg",
+    "title": "File:YAMAGATA HANAGASA MATSURI 2008 Day3 (2741704620).jpg"
+   }
+  ]
+ },
+ "33": {
+  "name": "五所川原立佞武多",
+  "type": "akari",
+  "lead": "高さ約23m、重さ約19トンの巨大な立佞武多が、見上げるほどの高さで五所川原の街を練り歩きます。「ヤッテマレ」の掛け声とともに進む姿は圧巻です。",
+  "tips": [
+   "ふだんは「立佞武多の館」に展示されている。祭りの時期以外も実物を見られる",
+   "有料観覧席あり。高さを実感するなら、少し離れて見上げる位置がおすすめ",
+   "青森ねぶたと日程が重なるので、津軽の祭りをまとめて巡る旅程が組める"
+  ],
+  "trivia": "明治時代に巨大ねぷたとして栄え、一度途絶えた後、1998年に約80年ぶりに復活しました。",
+  "ease": {
+   "level": "honki",
+   "prep": "半年前",
+   "note": "遠く、周辺の宿も少ない。青森ねぶたと合わせた津軽の旅として計画を。",
+   "move": [
+    3,
+    "新幹線と在来線で約5時間"
+   ],
+   "stay": [
+    3,
+    "ねぶたの時期で周辺も混む"
+   ],
+   "view": [
+    2,
+    "有料席もある"
+   ],
+   "body": [
+    2,
+    "夜が本番"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "5日間",
+   "year": "",
+   "scale": 3,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/33/1.jpg",
+    "author": "撮影者に準ずる",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Tachineputa%EF%BD%9E2005%E7%82%8E%22Homura%22.JPG",
+    "title": "File:Tachineputa～2005炎\"Homura\".JPG"
+   },
+   {
+    "file": "photos/33/2.jpg",
+    "author": "撮影者に準ずる",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Tachineputa%EF%BD%9E2007_%22Mebukiurasaburu%22.JPG",
+    "title": "File:Tachineputa～2007 \"Mebukiurasaburu\".JPG"
+   },
+   {
+    "file": "photos/33/3.jpg",
+    "author": "掬茶",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tachineputa%EF%BD%9E2010_Matagi-2.JPG",
+    "title": "File:Tachineputa～2010 Matagi-2.JPG"
+   }
+  ]
+ },
+ "34": {
+  "name": "長岡まつり大花火大会",
+  "type": "hanabi",
+  "lead": "信濃川の河川敷で打ち上げられる、日本三大花火の一つ。復興祈願の「フェニックス」や正三尺玉など、慰霊と平和への祈りを込めた花火が夜空を覆います。",
+  "tips": [
+   "有料観覧席はほぼ必須。発売時期を確認して早めに申し込む",
+   "帰りの長岡駅は大混雑。臨時列車の時刻を事前に確認",
+   "宿は長岡市内がとても取りにくい。新潟市や新幹線沿線に泊まる手も"
+  ],
+  "trivia": "長岡空襲の犠牲者への慰霊と、復興への願いが花火大会の原点です。",
+  "ease": {
+   "level": "honki",
+   "prep": "半年前",
+   "note": "有料席と宿の確保が勝負。新幹線で日帰りする手もあるが、帰りは深夜の大混雑。",
+   "move": [
+    2,
+    "新幹線で約1時間40分"
+   ],
+   "stay": [
+    3
+   ],
+   "view": [
+    3,
+    "有料観覧席の確保が必要"
+   ],
+   "body": [
+    2,
+    "夜・帰りの大混雑"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "約42万人（長岡まつり全体）",
+   "days": "3日間",
+   "year": "2025年",
+   "scale": 3,
+   "src": "https://gatachira.com/local/event/10213776/"
+  },
+  "photos": [
+   {
+    "file": "photos/34/3.jpg",
+    "author": "113icecream Japanese Fireworks",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nagaoka_Festival_Fireworks_2015_Three-shaku_Fireworks.jpg",
+    "title": "File:Nagaoka Festival Fireworks 2015 Three-shaku Fireworks.jpg"
+   }
+  ]
+ },
+ "35": {
+  "name": "京都五山送り火",
+  "type": "hi",
+  "lead": "お盆に迎えた精霊を送る京都の伝統行事。8月16日の夜、大文字・妙法・船形・左大文字・鳥居形の5つの送り火が、京都を囲む山々に順に灯ります。",
+  "tips": [
+   "大文字から順に20時から点火。1か所から5つすべてを見るのは難しいので、見たい送り火を決めて場所を選ぶ",
+   "大文字は鴨川の河川敷（出町柳あたり）から見やすい",
+   "送り火は宗教行事。「大文字焼き」とは呼ばないのが京都のマナー"
+  ],
+  "trivia": "点火は約30分ほどで消えていく、短くも印象的な行事です。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "3か月前",
+   "note": "お盆の京都は宿が高く取りにくい。見る送り火と場所を先に決めておく。",
+   "move": [
+    2,
+    "新幹線で約2時間15分"
+   ],
+   "stay": [
+    3,
+    "お盆の京都は争奪戦"
+   ],
+   "view": [
+    2,
+    "見える場所は限られ、混雑"
+   ],
+   "body": [
+    2,
+    "真夏の夜"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "1夜",
+   "year": "",
+   "scale": 4,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/35/1.jpg",
+    "author": "J_o",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Gozanokuribi_Daimonji2.jpg",
+    "title": "File:Gozanokuribi Daimonji2.jpg"
+   },
+   {
+    "file": "photos/35/2.jpg",
+    "author": "Takeshi Kuboki from Amagasaki, Japan",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Daimonji_on_Gozan_okuribi_(3825647129).jpg",
+    "title": "File:Daimonji on Gozan okuribi (3825647129).jpg"
+   },
+   {
+    "file": "photos/35/3.jpg",
+    "author": "kajikawa",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E9%B3%A5%E5%B1%85%E5%BD%A2%E6%9D%BE%E6%98%8E_-_panoramio.jpg",
+    "title": "File:鳥居形松明 - panoramio.jpg"
+   }
+  ]
+ },
+ "36": {
+  "name": "さっぽろ大通ビアガーデン",
+  "type": "sake",
+  "lead": "さっぽろ夏まつりの一環として、大通公園の約1kmにビール各社の会場が並ぶ日本最大級のビアガーデン。北海道の夏の夕暮れに、各社自慢のビールを飲み比べられます。",
+  "tips": [
+   "丁目ごとに会場を出すビール会社が違う。ハシゴして飲み比べるのが楽しい",
+   "平日の夕方は比較的入りやすい。週末の夜は混雑",
+   "真夏でも夜は涼しくなる日がある。羽織るものを一枚"
+  ],
+  "trivia": "2026年は期間中に約111万人が来場し、約42万リットルのビールが消費されました。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "2か月前",
+   "note": "会場は気軽に楽しめる。北海道旅行とビールのテーマを組み合わせるのにぴったり。",
+   "move": [
+    3,
+    "飛行機"
+   ],
+   "stay": [
+    2
+   ],
+   "view": [
+    1,
+    "好きな会場を選んで自由に"
+   ],
+   "body": [
+    1,
+    "夕方から夜。北海道の夏は涼しい"
+   ],
+   "join": [
+    "drop",
+    "飲んで参加"
+   ]
+  },
+  "audience": {
+   "n": "約111万人",
+   "days": "約4週間",
+   "year": "2026年",
+   "scale": 4,
+   "src": "https://www.uhb.jp/news/single.html?id=61590"
+  },
+  "offset": [
+   9,
+   0
+  ],
+  "photos": [
+   {
+    "file": "photos/36/1.jpg",
+    "author": "t-konno",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E3%81%95%E3%81%A3%E3%81%BD%E3%82%8D%E5%A4%A7%E9%80%9A%E3%83%93%E3%82%A2%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3(Sapporo_Odori_Beer_Garden)_-_panoramio.jpg",
+    "title": "File:さっぽろ大通ビアガーデン(Sapporo Odori Beer Garden) - panoramio.jpg"
+   },
+   {
+    "file": "photos/36/2.jpg",
+    "author": "bryan... from Taipei, Taiwan",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E3%83%93%E3%82%A2%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3_(26620537089).jpg",
+    "title": "File:ビアガーデン (26620537089).jpg"
+   }
+  ]
+ },
+ "37": {
+  "name": "沖縄全島エイサーまつり",
+  "type": "odori",
+  "lead": "沖縄各地の青年会が集まり、太鼓と三線、指笛に合わせて勇壮なエイサーを披露します。沖縄の夏の終わりを告げる、エイサーの一大祭典です。",
+  "tips": [
+   "コザの街を練り歩く「道じゅねー」は無料で間近に見られる",
+   "陸上競技場での演舞は有料席もある。各地の青年会の違いを見比べるのが楽しい",
+   "花火やオリオンビールのイベントと同時開催されることが多い"
+  ],
+  "trivia": "1956年に「全島エイサーコンクール」として始まりました。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "2か月前",
+   "note": "沖縄旅行と組み合わせやすい。旧盆明けで日程が毎年変わるので早めに確認を。",
+   "move": [
+    3,
+    "飛行機"
+   ],
+   "stay": [
+    2
+   ],
+   "view": [
+    2,
+    "競技場は有料席も"
+   ],
+   "body": [
+    2,
+    "真夏の夜"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "3日間",
+   "year": "",
+   "scale": 3,
+   "est": true,
+   "src": ""
+  }
+ },
+ "38": {
+  "name": "新居浜太鼓祭り",
+  "type": "dashi",
+  "lead": "金糸の刺繍で飾られた重さ約3トンの太鼓台を、150人ほどのかき夫が担ぎ上げます。太鼓台同士が技を競う「かきくらべ」が最大の見どころです。",
+  "tips": [
+   "太鼓台を差し上げる「差し上げ」の瞬間は、観客からも大きな歓声が上がる",
+   "地区ごとに日程と会場が違う。見たい場面の場所を事前に確認",
+   "早朝から夜まで続く。体力配分を考えて見どころを絞る"
+  ],
+  "trivia": "「男祭り」とも呼ばれ、四国三大祭りの一つに数えられます。",
+  "ease": {
+   "level": "honki",
+   "prep": "半年前",
+   "note": "遠く、祭りの時期は市内の宿が取りにくい。松山や道後温泉に泊まる手も。",
+   "move": [
+    3,
+    "新幹線と特急で約5時間、または飛行機"
+   ],
+   "stay": [
+    3
+   ],
+   "view": [
+    2,
+    "かきくらべは場所取り"
+   ],
+   "body": [
+    2,
+    "早朝から夜まで"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "3日間",
+   "year": "",
+   "scale": 3,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/38/1.jpg",
+    "author": "NFA999 at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Niihama_Taiko_Festival_-_frenzy.jpg",
+    "title": "File:Niihama Taiko Festival - frenzy.jpg"
+   },
+   {
+    "file": "photos/38/2.jpg",
+    "author": "NFA999 at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Niihama_Taiko_Festival_-_holding_float.jpg",
+    "title": "File:Niihama Taiko Festival - holding float.jpg"
+   },
+   {
+    "file": "photos/38/3.jpg",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "license_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Niihama_Taiko_Festival_1955.jpg",
+    "title": "File:Niihama Taiko Festival 1955.jpg"
+   }
+  ]
+ },
+ "39": {
+  "name": "灘のけんか祭り",
+  "type": "mikoshi",
+  "lead": "松原八幡神社の秋祭りで、3基の神輿を激しくぶつけ合う「神輿合わせ」から「けんか祭り」と呼ばれます。練り（屋台）の豪快な練り合わせも見どころです。",
+  "tips": [
+   "15日の本宮が本番。お旅山の桟敷席（有料）から見るのが安全で見やすい",
+   "神輿のぶつかり合いは危険も伴う。混雑した斜面では足元と周囲に注意",
+   "姫路城の観光とセットにできる"
+  ],
+  "trivia": "播州の秋祭りの代表格で、兵庫県の重要無形民俗文化財に指定されています。",
+  "ease": {
+   "level": "keikaku",
+   "prep": "2か月前",
+   "note": "姫路まで新幹線で行ける。安全に見るなら桟敷席を確保したい。",
+   "move": [
+    2,
+    "新幹線で姫路まで約3時間"
+   ],
+   "stay": [
+    2
+   ],
+   "view": [
+    3,
+    "桟敷席（有料）がほぼ必須"
+   ],
+   "body": [
+    2,
+    "一日中の立ち見と混雑"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "2日間",
+   "year": "",
+   "scale": 2,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/39/1.jpg",
+    "author": "Sailko",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nada_no_Kenka_matsuri,_Himeji_03.JPG",
+    "title": "File:Nada no Kenka matsuri, Himeji 03.JPG"
+   },
+   {
+    "file": "photos/39/2.jpg",
+    "author": "Sailko",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nada_no_Kenka_matsuri,_Himeji_01.JPG",
+    "title": "File:Nada no Kenka matsuri, Himeji 01.JPG"
+   },
+   {
+    "file": "photos/39/3.jpg",
+    "author": "Sailko",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nada_no_Kenka_matsuri,_Himeji_02.JPG",
+    "title": "File:Nada no Kenka matsuri, Himeji 02.JPG"
+   }
+  ]
+ },
+ "40": {
+  "name": "深川八幡祭り",
+  "type": "mikoshi",
+  "lead": "富岡八幡宮の例祭で、江戸三大祭りの一つ。担がれて進む神輿に、沿道の観客が勢いよく水を浴びせる「水かけ祭り」として知られています。",
+  "tips": [
+   "本祭（3年に1度）の神輿連合渡御では、50基を超える神輿が次々に進む。次は2029年",
+   "沿道では水をかけられる覚悟で。濡れてもよい服装とスマホの防水を",
+   "本祭以外の年も、例祭の行事や子ども神輿がある"
+  ],
+  "trivia": "江戸時代から続く祭りで、水かけは真夏の担ぎ手を清め、涼をとってもらう意味があるといわれます。",
+  "ease": {
+   "level": "furatto",
+   "prep": "直前でOK",
+   "note": "電車ですぐ。濡れる前提で行けば、観客として参加している気分が味わえる。",
+   "move": [
+    1
+   ],
+   "stay": [
+    1
+   ],
+   "view": [
+    2,
+    "本祭の沿道は大混雑"
+   ],
+   "body": [
+    2,
+    "真夏の屋外"
+   ],
+   "join": [
+    "drop",
+    "沿道から水をかけて参加"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "期間中",
+   "year": "",
+   "scale": 3,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/40/1.jpg",
+    "author": "Syced",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Fukugawa_Hachiman_hon_matsuri_2026.jpg",
+    "title": "File:Fukugawa Hachiman hon matsuri 2026.jpg"
+   },
+   {
+    "file": "photos/40/2.jpg",
+    "author": "Syced",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Fukugawa_Hachiman_hon_matsuri_2026_(11018).jpg",
+    "title": "File:Fukugawa Hachiman hon matsuri 2026 (11018).jpg"
+   },
+   {
+    "file": "photos/40/3.jpg",
+    "author": "Syced",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Fukugawa_Hachiman_hon_matsuri_2026_(52744).jpg",
+    "title": "File:Fukugawa Hachiman hon matsuri 2026 (52744).jpg"
+   }
+  ]
+ },
+ "41": {
+  "name": "東京高円寺阿波おどり",
+  "type": "odori",
+  "lead": "徳島の阿波おどりに次ぐ規模といわれる、東京の阿波おどり。高円寺駅周辺の商店街に演舞場が設けられ、全国の連が熱のこもった踊りを見せます。",
+  "tips": [
+   "演舞場は駅周辺の通りに点在。商店街の細い道は、踊り手との距離が近く迫力がある",
+   "夕方から夜が本番。駅周辺は大混雑するので、隣の駅から歩く手も",
+   "高円寺の飲み屋街と合わせて、夏の夜を楽しめる"
+  ],
+  "trivia": "1957年、商店街の町おこしとして始まりました。",
+  "ease": {
+   "level": "furatto",
+   "prep": "直前でOK",
+   "note": "中央線ですぐ。夕方にふらっと行って、踊りと高円寺の夜を楽しめる。",
+   "move": [
+    1
+   ],
+   "stay": [
+    1
+   ],
+   "view": [
+    2,
+    "演舞場は大混雑"
+   ],
+   "body": [
+    2,
+    "真夏の夜"
+   ],
+   "join": [
+    "see",
+    "見るだけ"
+   ]
+  },
+  "audience": {
+   "n": "公表値を確認できず",
+   "days": "2日間",
+   "year": "",
+   "scale": 4,
+   "est": true,
+   "src": ""
+  },
+  "photos": [
+   {
+    "file": "photos/41/1.jpg",
+    "author": "Tyoron2",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Koenji_awaodori.JPG",
+    "title": "File:Koenji awaodori.JPG"
+   },
+   {
+    "file": "photos/41/2.jpg",
+    "author": "KQuhen",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Koenji_Awa_Odori_street.jpg",
+    "title": "File:Koenji Awa Odori street.jpg"
+   }
+  ]
+ }
+}

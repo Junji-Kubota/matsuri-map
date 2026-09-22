@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+
+# Local candidate photos (temporary, never meant to be committed)
+photos/_candidates/
+
+# Generated map (built by GitHub Actions on push; keep out of version control
+# so the deployed site never drifts from festivals.csv / festival_details.json)
+matsuri-map.html
