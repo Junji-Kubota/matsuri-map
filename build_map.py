@@ -18,7 +18,7 @@ OUT_PATH = ROOT / "matsuri-map.html"
 PHOTO_ASSETS = ROOT / "photo_assets.json"
 
 CSV_REQUIRED = ["id", "name", "prefecture", "city", "lat", "lon", "period",
-                "official_url", "source_url", "checked_on", "notes", "month", "next_date",
+                "official_url", "source_url", "checked_on", "notes", "month", "next_date", "end_date",
                 "genre", "days", "best_time", "nearest_station", "station_kubun", "travel_hours_tokyo"]
 TYPES = {"dashi", "mikoshi", "odori", "akari", "yuki", "sake", "tsuna", "hanabi", "hi"}
 LEVELS = {"furatto", "keikaku", "honki"}
@@ -65,11 +65,23 @@ def main():
         months = [m for m in r["month"].split(";") if m.strip()]
         if not months or not all(m.strip().isdigit() and 1 <= int(m) <= 12 for m in months):
             errors.append(f"{label}: month は 1〜12 をセミコロン区切りで（例 7;8）")
+        nd_dt = ed_dt = None
         if r["next_date"].strip():
             try:
-                datetime.strptime(r["next_date"].strip(), "%Y-%m-%d")
+                nd_dt = datetime.strptime(r["next_date"].strip(), "%Y-%m-%d")
             except ValueError:
                 errors.append(f"{label}: next_date は YYYY-MM-DD 形式で")
+        if r["end_date"].strip():
+            try:
+                ed_dt = datetime.strptime(r["end_date"].strip(), "%Y-%m-%d")
+            except ValueError:
+                errors.append(f"{label}: end_date は YYYY-MM-DD 形式で")
+            if not r["next_date"].strip():
+                errors.append(f"{label}: end_date があるのに next_date が空です")
+        elif r["next_date"].strip():
+            errors.append(f"{label}: next_date があるのに end_date が空です")
+        if nd_dt and ed_dt and ed_dt < nd_dt:
+            errors.append(f"{label}: end_date が next_date より前です")
         if r["genre"].strip() not in GENRES:
             errors.append(f"{label}: genre は {'/'.join(sorted(GENRES))} のどれか")
         try:

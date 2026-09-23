@@ -115,6 +115,9 @@ h3{font-size:12px;letter-spacing:.1em;color:var(--muted);margin:0 0 4px;font-wei
 .route{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-size:13px;border-top:1px solid var(--line);padding-top:12px}
 .btn{font:inherit;font-size:13px;font-weight:700;display:inline-flex;align-items:center;gap:6px;border-radius:8px;padding:6px 12px;text-decoration:none;border:1px solid var(--ink);background:var(--ink);color:var(--panel);cursor:pointer}
 .marks{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.daypick{display:flex;gap:8px 14px;flex-wrap:wrap;align-items:center;font-size:13px}
+.daychips{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.btn.cal{background:var(--panel);color:var(--ink)}
 .marks .lbl{font-size:12px;color:var(--muted);margin-right:4px}
 .mk{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:4px 12px;cursor:pointer}
 .mk[aria-pressed="true"].want{background:var(--want);border-color:var(--want);color:#fff}
@@ -237,18 +240,34 @@ function km(a,b,c,d){const R=6371,r=Math.PI/180,x=Math.sin((c-a)*r/2)**2+Math.co
 const rows = D.rows.map(r=>{
   const months = r.month.split(';').map(Number).filter(Boolean);
   const nd = r.next_date ? new Date(r.next_date+'T00:00:00') : null;
+  const end = r.end_date ? new Date(r.end_date+'T00:00:00') : null;
+  const span = (nd&&end) ? Math.round((end-nd)/864e5)+1 : (nd?1:0); // 本番の日数（1なら1日だけ）
   const lat=+r.lat, lon=+r.lon; const [x,y]=proj(lat,lon);
   const region = (D.regions.find(g=>g.id!=='all' && lon>=g.bb[0][0]&&lon<=g.bb[1][0]&&lat>=g.bb[0][1]&&lat<=g.bb[1][1])||{}).id;
-  return {...r, x, y, lat, lon, months, region, season:SEASON(months[0]), nd, days: nd? Math.round((nd-TODAY)/864e5):null,
+  return {...r, x, y, lat, lon, months, region, season:SEASON(months[0]), nd, end, span, days: nd? Math.round((nd-TODAY)/864e5):null,
     check:/要確認/.test(r.notes), dist: km(D.home.lat,D.home.lon,lat,lon)};
 }).sort((a,b)=>(a.nd?a.nd:Infinity)-(b.nd?b.nd:Infinity));
 function inBox(r,g){return g.id==='all' || (r.lon>=g.bb[0][0]&&r.lon<=g.bb[1][0]&&r.lat>=g.bb[0][1]&&r.lat<=g.bb[1][1]);}
 
-const S = {region:'all', month:0, level:'', genre:'', onlyMarked:false, sel: rows.find(r=>r.nd && r.days>=0) || rows[0], marks:{}, photos:{}};
+const S = {region:'all', month:0, level:'', genre:'', onlyMarked:false, sel: rows.find(r=>r.nd && r.days>=0) || rows[0], marks:{}, photos:{}, dayPick:{}};
 let db=null, assets=null, canUpload=false, pidx=0, pidxFor=null;
 
 const fmt = d => `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日`;
 const cd = n => n==null?'':n===0?'今日から':n>0?`あと${n}日`:'開催中/終了';
+// 本番が複数日の祭りは「10月17日〜18日」のように範囲で見せる
+const fmtRange = r => {
+  if(!r.nd) return '未定';
+  if(r.span<=1 || !r.end) return fmt(r.nd);
+  const sameMonth = r.nd.getFullYear()===r.end.getFullYear() && r.nd.getMonth()===r.end.getMonth();
+  return sameMonth ? `${fmt(r.nd)}〜${r.end.getDate()}日` : `${fmt(r.nd)}〜${fmt(r.end)}`;
+};
+const fmtRangeShort = r => {
+  if(!r.nd) return '';
+  const a = `${r.nd.getMonth()+1}/${r.nd.getDate()}`;
+  if(r.span<=1 || !r.end) return a;
+  const sameMonth = r.nd.getMonth()===r.end.getMonth();
+  return sameMonth ? `${a}-${r.end.getDate()}` : `${a}-${r.end.getMonth()+1}/${r.end.getDate()}`;
+};
 
 /* ---------- controls ---------- */
 D.regions.forEach(g=>{
@@ -377,7 +396,7 @@ function render(){
     const m=S.marks[r.id];
     li.innerHTML=`${glyph(r.type,22,`var(--${r.season})`)}
       <span><span class="nm">${esc(r.name)}</span><span class="pf">${esc(r.prefecture)}</span><span class="lv ${r.lv}">${LV[r.lv]}</span>${m?`<span class="mpill ${m}">${MARKS[m]}</span>`:''}</span>
-      <span class="dt">${r.nd?`<b>${r.nd.getMonth()+1}/${r.nd.getDate()}</b><span class="cd">${cd(r.days)}</span>`:`<b>未定</b><span class="cd">${r.months.join('・')}月頃</span>`}</span>`;
+      <span class="dt">${r.nd?`<b>${fmtRangeShort(r)}</b><span class="cd">${cd(r.days)}</span>`:`<b>未定</b><span class="cd">${r.months.join('・')}月頃</span>`}</span>`;
     const pick=()=>{S.sel=r;render();};
     li.onclick=pick; li.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pick();}};
     list.appendChild(li);
@@ -397,6 +416,44 @@ function easeBlock(r){
       ${r.ic?`<dt>車</dt><dd>${esc(r.ic)}</dd>`:''}</dl>
     <div class="aud"><span>規模</span><span class="dots" aria-label="5段階中${a.scale}">${dots}</span><span>${esc(a.n)}${a.days?`・${esc(a.days)}`:''}${a.year?`（${esc(a.year)}）`:''}</span>${a.est?'<small>規模は推定</small>':''}${a.src?`<a href="${esc(a.src)}" target="_blank" rel="noopener">人出の出典</a>`:''}</div>
   </section>`;
+}
+
+/* ---------- 行く日を選んでカレンダーに追加 ---------- */
+const ymd = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+function daysInRange(r){
+  const out=[]; const d=new Date(r.nd);
+  for(let i=0;i<r.span;i++){ out.push(ymd(d)); d.setDate(d.getDate()+1); }
+  return out;
+}
+function icsFor(r, dateStr){
+  const esc2 = s => String(s??'').replace(/([,;\\])/g,'\\$1').replace(/\n/g,'\\n');
+  const bare = dateStr.replace(/-/g,'');
+  const next = new Date(dateStr+'T00:00:00'); next.setDate(next.getDate()+1);
+  const bare2 = ymd(next).replace(/-/g,'');
+  const stamp = new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d+Z$/,'Z');
+  return ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//matsuri-map//JA','CALSCALE:GREGORIAN',
+    'BEGIN:VEVENT',
+    `UID:matsuri-${r.id}-${bare}@matsuri-map`,
+    `DTSTAMP:${stamp}`,
+    `DTSTART;VALUE=DATE:${bare}`,
+    `DTEND;VALUE=DATE:${bare2}`,
+    `SUMMARY:${esc2(r.name)}`,
+    `LOCATION:${esc2(r.prefecture+r.city)}`,
+    r.lead?`DESCRIPTION:${esc2(r.lead)}`:'',
+    'END:VEVENT','END:VCALENDAR'].filter(Boolean).join('\r\n');
+}
+function dayPickBlock(r){
+  if(!r.nd) return '';
+  const picked = S.dayPick[r.id] || r.next_date;
+  const multi = r.span>1;
+  const days = multi ? daysInRange(r) : [r.next_date];
+  const chips = multi ? `<div class="daychips" role="group" aria-label="行く日">${days.map(d=>{
+      const dt=new Date(d+'T00:00:00');
+      return `<button type="button" class="chip day" data-d="${d}" aria-pressed="${d===picked}">${dt.getMonth()+1}/${dt.getDate()}</button>`;
+    }).join('')}</div>` : '';
+  const fileSafe = r.name.replace(/[\\/:*?"<>|]/g,'');
+  const ics = `data:text/calendar;charset=utf-8,${encodeURIComponent(icsFor(r,picked))}`;
+  return `<div class="daypick">${multi?`<span class="lbl">行く日</span>${chips}`:''}<a class="btn cal" href="${ics}" download="${esc(fileSafe)}_${picked}.ics">📅 カレンダーに追加（${picked}）</a></div>`;
 }
 function renderDetail(){
   const r=S.sel, m=S.marks[r.id], pid=S.photos[r.id];
@@ -421,17 +478,19 @@ function renderDetail(){
         <p class="where"><span class="typechip" style="background:var(--${r.season})">${glyph(r.type,14)}${TYPES[r.type]}</span>${esc(r.prefecture)} ${esc(r.city)}${r.check?'<span class="badge">要確認あり</span>':''}</p>
       </div>
       <p class="lead">${esc(r.lead)}</p>
-      <dl class="facts"><dt>時期</dt><dd>${esc(r.period)}</dd><dt>次回</dt><dd>${r.nd?`${fmt(r.nd)}（${cd(r.days)}）`:'未定'}</dd>
+      <dl class="facts"><dt>時期</dt><dd>${esc(r.period)}</dd><dt>次回</dt><dd>${r.nd?`${fmtRange(r)}（${cd(r.days)}）`:'未定'}</dd>
         <dt>所要</dt><dd>目安${r.stay_days}日${r.best_time?`・見どころは${esc(r.best_time.split(';').join('・'))}`:''}</dd>
         <dt>東京から</dt><dd>${esc(r.travel_hours_tokyo||'要確認')}${r.nearest_station?`（${esc(r.nearest_station)}駅）`:''}</dd></dl>
       ${easeBlock(r)}
       <div class="tips"><h3>楽しみ方のコツ</h3><ul>${(r.tips||[]).map(t=>`<li>${esc(t)}</li>`).join('')}</ul></div>
       <p class="trivia"><b>豆知識</b>${esc(r.trivia)}</p>
       <div class="marks" role="group" aria-label="印をつける"><span class="lbl">印</span>${Object.entries(MARKS).map(([k,t])=>`<button type="button" class="mk ${k}" data-k="${k}" aria-pressed="${m===k}">${t}</button>`).join('')}</div>
+      ${dayPickBlock(r)}
       <div class="route"><a class="btn" href="${route}" target="_blank" rel="noopener">自宅からの経路を調べる ↗</a><span>つつじヶ丘から直線で約${Math.round(r.dist).toLocaleString()}km</span></div>
       <div class="links">${r.official_url?`<a href="${esc(r.official_url)}" target="_blank" rel="noopener">公式サイト</a>`:''}${r.source_url&&r.source_url!==r.official_url?`<a href="${esc(r.source_url)}" target="_blank" rel="noopener">日程の出典</a>`:''}<span>確認日 ${esc(r.checked_on)}</span>${r.check?`<span>メモ：${esc(r.notes.split('。').filter(s=>/要確認/.test(s)).join('。'))}</span>`:''}</div>
     </div>`;
   $('detail').querySelectorAll('.mk').forEach(b=>b.onclick=()=>setMark(r.id, S.marks[r.id]===b.dataset.k?null:b.dataset.k));
+  $('detail').querySelectorAll('.chip.day').forEach(b=>b.onclick=()=>{S.dayPick[r.id]=b.dataset.d; renderDetail();});
   const img=$('detail').querySelector('.photo img'); if(img) img.onerror=()=>img.remove();
   const go=d=>{ pidx=(pidx+d+pics.length)%pics.length; renderDetail(); };
   const pv=$('detail').querySelector('.pnav.prev'), nx=$('detail').querySelector('.pnav.next');
