@@ -1,0 +1,17 @@
+# 改行コードをリポジトリ内で LF に統一する。
+# Windows のツールが CRLF で書き戻しても、差分として出なくなる。
+* text=auto eol=lf
+
+*.csv  text eol=lf
+*.json text eol=lf
+*.py   text eol=lf
+*.md   text eol=lf
+*.html text eol=lf
+*.yml  text eol=lf
+
+# 画像はバイナリとして扱う（改行変換の対象外）
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.gif  binary
+*.webp binary
