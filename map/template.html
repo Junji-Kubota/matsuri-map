@@ -117,6 +117,14 @@ h3{font-size:12px;letter-spacing:.1em;color:var(--muted);margin:0 0 4px;font-wei
 .marks{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .daypick{display:flex;gap:8px 14px;flex-wrap:wrap;align-items:center;font-size:13px}
 .daychips{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.trip{display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--line);padding-top:12px}
+.tripmode{display:flex;gap:6px;flex-wrap:wrap}
+table.itin{width:100%;border-collapse:collapse;font-size:12.5px}
+table.itin th,table.itin td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top;line-height:1.5}
+table.itin thead th{background:var(--soft);font-weight:700}
+table.itin tbody th{white-space:nowrap;font-weight:700;background:var(--soft)}
+table.itin td a{color:var(--link)}
+.tripnote{margin:0;font-size:12px;color:var(--muted)}
 .btn.cal{background:var(--panel);color:var(--ink)}
 .marks .lbl{font-size:12px;color:var(--muted);margin-right:4px}
 .mk{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:4px 12px;cursor:pointer}
@@ -249,7 +257,7 @@ const rows = D.rows.map(r=>{
 }).sort((a,b)=>(a.nd?a.nd:Infinity)-(b.nd?b.nd:Infinity));
 function inBox(r,g){return g.id==='all' || (r.lon>=g.bb[0][0]&&r.lon<=g.bb[1][0]&&r.lat>=g.bb[0][1]&&r.lat<=g.bb[1][1]);}
 
-const S = {region:'all', month:0, level:'', genre:'', onlyMarked:false, sel: rows.find(r=>r.nd && r.days>=0) || rows[0], marks:{}, photos:{}, dayPick:{}};
+const S = {region:'all', month:0, level:'', genre:'', onlyMarked:false, sel: rows.find(r=>r.nd && r.days>=0) || rows[0], marks:{}, photos:{}, trip:{}};
 let db=null, assets=null, canUpload=false, pidx=0, pidxFor=null;
 
 const fmt = d => `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日`;
@@ -420,10 +428,16 @@ function easeBlock(r){
 
 /* ---------- 行く日を選んでカレンダーに追加 ---------- */
 const ymd = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+const monthDay = ds => { const d=new Date(ds+'T00:00:00'); return `${d.getMonth()+1}/${d.getDate()}`; };
 function daysInRange(r){
   const out=[]; const d=new Date(r.nd);
   for(let i=0;i<r.span;i++){ out.push(ymd(d)); d.setDate(d.getDate()+1); }
   return out;
+}
+// 祭りごとの「行く日（範囲）」「移動手段」。ページを開いている間だけ覚えている（保存はしない）。
+function getTrip(r){
+  if(!S.trip[r.id]) S.trip[r.id] = {range:{start:r.next_date, end:r.next_date}, mode:'train'};
+  return S.trip[r.id];
 }
 function icsFor(r, dateStr){
   const esc2 = s => String(s??'').replace(/([,;\\])/g,'\\$1').replace(/\n/g,'\\n');
@@ -444,16 +458,99 @@ function icsFor(r, dateStr){
 }
 function dayPickBlock(r){
   if(!r.nd) return '';
-  const picked = S.dayPick[r.id] || r.next_date;
+  const t = getTrip(r);
   const multi = r.span>1;
   const days = multi ? daysInRange(r) : [r.next_date];
-  const chips = multi ? `<div class="daychips" role="group" aria-label="行く日">${days.map(d=>{
-      const dt=new Date(d+'T00:00:00');
-      return `<button type="button" class="chip day" data-d="${d}" aria-pressed="${d===picked}">${dt.getMonth()+1}/${dt.getDate()}</button>`;
-    }).join('')}</div>` : '';
+  const chips = multi ? `<div class="daychips" role="group" aria-label="行く日（最初と最後の日をクリック）">${days.map(d=>
+      `<button type="button" class="chip day" data-d="${d}" aria-pressed="${d>=t.range.start && d<=t.range.end}">${monthDay(d)}</button>`
+    ).join('')}</div>` : '';
   const fileSafe = r.name.replace(/[\\/:*?"<>|]/g,'');
-  const ics = `data:text/calendar;charset=utf-8,${encodeURIComponent(icsFor(r,picked))}`;
-  return `<div class="daypick">${multi?`<span class="lbl">行く日</span>${chips}`:''}<a class="btn cal" href="${ics}" download="${esc(fileSafe)}_${picked}.ics">📅 カレンダーに追加（${picked}）</a></div>`;
+  const ics = `data:text/calendar;charset=utf-8,${encodeURIComponent(icsFor(r,t.range.start))}`;
+  return `<div class="daypick">${multi?`<span class="lbl">行く日</span>${chips}`:''}<a class="btn cal" href="${ics}" download="${esc(fileSafe)}_${t.range.start}.ics">📅 カレンダーに追加（${t.range.start}）</a></div>`;
+}
+
+/* ---------- 旅程を作る ---------- */
+const HOME = 'つつじヶ丘駅';
+function hoursOf(s){ // "約4時間30分" のような文字列から時間数を読み取る（比較用のおおまかな値）
+  if(!s) return 0;
+  const h=/(\d+)\s*時間/.exec(s), m=/(\d+)\s*分/.exec(s);
+  return (h?+h[1]:0) + (m?+m[1]:0)/60;
+}
+const needsFront = r => /未明|早朝/.test(r.best_time||'');
+const needsBack = r => /夜/.test(r.best_time||'') && hoursOf(r.travel_hours_tokyo) >= 2;
+function tripDays(r, range){
+  const start=new Date(range.start+'T00:00:00'), end=new Date(range.end+'T00:00:00');
+  const span=Math.round((end-start)/864e5)+1;
+  const front=needsFront(r), back=needsBack(r), days=[];
+  if(front){ const d0=new Date(start); d0.setDate(d0.getDate()-1); days.push({date:ymd(d0), festival:false, outbound:true, inbound:false, lodge:true}); }
+  for(let i=0;i<span;i++){
+    const d=new Date(start); d.setDate(d.getDate()+i);
+    const isFirst=i===0, isLast=i===span-1;
+    days.push({date:ymd(d), festival:true, outbound:isFirst&&!front, inbound:isLast&&!back, lodge:(i<span-1)||(isLast&&back)});
+  }
+  if(back){ const dN=new Date(end); dN.setDate(dN.getDate()+1); days.push({date:ymd(dN), festival:false, outbound:false, inbound:true, lodge:false}); }
+  return days;
+}
+const jorudanUrl = (from,to,d) => `https://www.jorudan.co.jp/norikae/cgi/nori.cgi?eki1=${encodeURIComponent(from)}&eki2=${encodeURIComponent(to)}&Dym=${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}&Ddd=${String(d.getDate()).padStart(2,'0')}&Sok=1`;
+const gmapsDriveUrl = (from,to) => `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(from)}&destination=${encodeURIComponent(to)}&travelmode=driving`;
+function travelRow(r, mode, dateStr, isReturn){
+  const d=new Date(dateStr+'T00:00:00');
+  const station = r.nearest_station ? r.nearest_station+'駅' : '';
+  const carDest = r.ic || `${r.lat},${r.lon}`;
+  const links=[]; let content;
+  const seg = (a,b) => isReturn?`${b} → ${a}`:`${a} → ${b}`;
+  if(mode==='car'){
+    content = `${isReturn?'復路':'往路'}：${seg('つつじヶ丘','会場')}（車）`;
+    links.push({label:'ルート', url: isReturn?gmapsDriveUrl(carDest,HOME):gmapsDriveUrl(HOME,carDest)});
+  } else if(mode==='train'){
+    content = `${isReturn?'復路':'往路'}：${seg('つつじヶ丘', station||'会場')}`;
+    if(station) links.push({label:'乗換案内', url: isReturn?jorudanUrl(r.nearest_station,'つつじヶ丘',d):jorudanUrl('つつじヶ丘',r.nearest_station,d)});
+  } else { // train+car
+    if(station){
+      content = `${isReturn?'復路':'往路'}：${seg('つつじヶ丘', station)}（電車）→ ${seg(station,'会場')}（車）`;
+      links.push({label:'乗換案内', url: isReturn?jorudanUrl(r.nearest_station,'つつじヶ丘',d):jorudanUrl('つつじヶ丘',r.nearest_station,d)});
+      links.push({label:'現地の車ルート', url: isReturn?gmapsDriveUrl(carDest,station):gmapsDriveUrl(station,carDest)});
+    } else {
+      content = `${isReturn?'復路':'往路'}：${seg('つつじヶ丘','会場')}（車）`;
+      links.push({label:'ルート', url: isReturn?gmapsDriveUrl(carDest,HOME):gmapsDriveUrl(HOME,carDest)});
+    }
+  }
+  const note = `${esc(r.travel_hours_tokyo||'目安不明')}${links.map(l=>` ／ <a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join('')}`;
+  return {content, note};
+}
+function festivalRow(r){
+  const bt = (r.best_time||'').split(';').join('・');
+  return {content:`祭り：${r.name}${bt?`（${bt}）`:''}`, note: esc((r.tips&&r.tips[0])||'')};
+}
+function lodgeRow(r){
+  return {content:`宿泊：${r.nearest_station||r.city||'現地'}泊`, note:'宿の手配は含みません'};
+}
+function itineraryRows(r, range, mode){
+  return tripDays(r, range).map(day=>{
+    const lines=[];
+    if(day.outbound) lines.push(travelRow(r, mode, day.date, false));
+    if(day.festival) lines.push(festivalRow(r));
+    if(day.inbound) lines.push(travelRow(r, mode, day.date, true));
+    if(day.lodge) lines.push(lodgeRow(r));
+    return {date:day.date, lines};
+  });
+}
+const WD=['日','月','火','水','木','金','土'];
+function tripBlock(r){
+  if(!r.nd) return '';
+  const t = getTrip(r);
+  const rowsData = itineraryRows(r, t.range, t.mode);
+  const trs = rowsData.map(({date,lines})=>{
+    const d=new Date(date+'T00:00:00'); const label=`${d.getMonth()+1}/${d.getDate()}(${WD[d.getDay()]})`;
+    return lines.map((line,i)=>`<tr>${i===0?`<th rowspan="${lines.length}">${label}</th>`:''}<td>${esc(line.content)}</td><td>${line.note}</td></tr>`).join('');
+  }).join('');
+  const MODES=[['train','電車'],['car','レンタカー'],['train+car','電車＋レンタカー']];
+  return `<div class="trip">
+    <h3>旅程を作る</h3>
+    <div class="row tripmode" role="group" aria-label="移動手段">${MODES.map(([k,lab])=>`<button type="button" class="chip mode" data-m="${k}" aria-pressed="${t.mode===k}">${lab}</button>`).join('')}</div>
+    <table class="itin"><thead><tr><th>日付</th><th>内容</th><th>補足</th></tr></thead><tbody>${trs}</tbody></table>
+    <p class="tripnote">宿泊が必要な日は「泊」と表示しています（宿の手配は含みません）。所要時間は目安で、正確な時刻はリンク先で確認してください。</p>
+  </div>`;
 }
 function renderDetail(){
   const r=S.sel, m=S.marks[r.id], pid=S.photos[r.id];
@@ -486,11 +583,18 @@ function renderDetail(){
       <p class="trivia"><b>豆知識</b>${esc(r.trivia)}</p>
       <div class="marks" role="group" aria-label="印をつける"><span class="lbl">印</span>${Object.entries(MARKS).map(([k,t])=>`<button type="button" class="mk ${k}" data-k="${k}" aria-pressed="${m===k}">${t}</button>`).join('')}</div>
       ${dayPickBlock(r)}
+      ${tripBlock(r)}
       <div class="route"><a class="btn" href="${route}" target="_blank" rel="noopener">自宅からの経路を調べる ↗</a><span>つつじヶ丘から直線で約${Math.round(r.dist).toLocaleString()}km</span></div>
       <div class="links">${r.official_url?`<a href="${esc(r.official_url)}" target="_blank" rel="noopener">公式サイト</a>`:''}${r.source_url&&r.source_url!==r.official_url?`<a href="${esc(r.source_url)}" target="_blank" rel="noopener">日程の出典</a>`:''}<span>確認日 ${esc(r.checked_on)}</span>${r.check?`<span>メモ：${esc(r.notes.split('。').filter(s=>/要確認/.test(s)).join('。'))}</span>`:''}</div>
     </div>`;
   $('detail').querySelectorAll('.mk').forEach(b=>b.onclick=()=>setMark(r.id, S.marks[r.id]===b.dataset.k?null:b.dataset.k));
-  $('detail').querySelectorAll('.chip.day').forEach(b=>b.onclick=()=>{S.dayPick[r.id]=b.dataset.d; renderDetail();});
+  $('detail').querySelectorAll('.chip.day').forEach(b=>b.onclick=()=>{
+    const d=b.dataset.d, t=getTrip(r);
+    if(t.range.start!==t.range.end) t.range={start:d,end:d};
+    else if(t.range.start!==d) t.range={start:d<t.range.start?d:t.range.start, end:d>t.range.start?d:t.range.start};
+    renderDetail();
+  });
+  $('detail').querySelectorAll('.chip.mode').forEach(b=>b.onclick=()=>{getTrip(r).mode=b.dataset.m; renderDetail();});
   const img=$('detail').querySelector('.photo img'); if(img) img.onerror=()=>img.remove();
   const go=d=>{ pidx=(pidx+d+pics.length)%pics.length; renderDetail(); };
   const pv=$('detail').querySelector('.pnav.prev'), nx=$('detail').querySelector('.pnav.next');
