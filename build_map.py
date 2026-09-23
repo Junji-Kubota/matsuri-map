@@ -18,11 +18,14 @@ OUT_PATH = ROOT / "matsuri-map.html"
 PHOTO_ASSETS = ROOT / "photo_assets.json"
 
 CSV_REQUIRED = ["id", "name", "prefecture", "city", "lat", "lon", "period",
-                "official_url", "source_url", "checked_on", "notes", "month", "next_date"]
+                "official_url", "source_url", "checked_on", "notes", "month", "next_date",
+                "genre", "days", "best_time", "nearest_station", "station_kubun", "travel_hours_tokyo"]
 TYPES = {"dashi", "mikoshi", "odori", "akari", "yuki", "sake", "tsuna", "hanabi", "hi"}
 LEVELS = {"furatto", "keikaku", "honki"}
 AXES = ["move", "stay", "view", "body"]
 JOIN = {"see", "drop", "prep"}
+GENRES = {"祭り", "踊り", "花火", "酒・ビール", "行事"}
+BEST_TIMES = {"未明", "早朝", "日中", "夜"}
 
 
 def fail(msgs):
@@ -67,6 +70,18 @@ def main():
                 datetime.strptime(r["next_date"].strip(), "%Y-%m-%d")
             except ValueError:
                 errors.append(f"{label}: next_date は YYYY-MM-DD 形式で")
+        if r["genre"].strip() not in GENRES:
+            errors.append(f"{label}: genre は {'/'.join(sorted(GENRES))} のどれか")
+        try:
+            stay_days = int(r["days"].strip())
+            if stay_days < 1:
+                raise ValueError
+        except ValueError:
+            errors.append(f"{label}: days は1以上の整数で")
+            stay_days = None
+        best_times = [t for t in r["best_time"].split(";") if t.strip()]
+        if not best_times or not all(t.strip() in BEST_TIMES for t in best_times):
+            errors.append(f"{label}: best_time は {'/'.join(BEST_TIMES)} をセミコロン区切りで")
 
         d = details.get(rid)
         if d is None:
@@ -102,8 +117,13 @@ def main():
         if aud.get("scale") not in (1, 2, 3, 4, 5):
             errors.append(f"{label}: audience.scale は 1〜5")
 
+        base = {k: r[k].strip() for k in CSV_REQUIRED if k != "days"}
         out.append({
-            **{k: r[k].strip() for k in CSV_REQUIRED},
+            **base,
+            # CSVの "days"（参加に必要な日数）は stay_days に。
+            # "days" はテンプレート側で「次回開催までの残り日数」として計算し直すため、
+            # 同じキー名で渡すと上書きされてしまう。
+            "stay_days": stay_days,
             "type": d.get("type"), "lead": d.get("lead", ""), "tips": d.get("tips", []),
             "trivia": d.get("trivia", ""),
             "lv": e.get("level"), "prep": e.get("prep", ""), "enote": e.get("note", ""),

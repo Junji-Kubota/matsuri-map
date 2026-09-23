@@ -173,6 +173,7 @@ input[type=file]{display:none}
   <div class="controls">
     <div class="row" id="regions" role="group" aria-label="地方"><span class="lbl">地方</span></div>
     <div class="row" id="months" role="group" aria-label="開催月"><span class="lbl">月</span></div>
+    <div class="row" id="genres" role="group" aria-label="ジャンル"><span class="lbl">ジャンル</span></div>
     <div class="row" id="levels" role="group" aria-label="行きやすさ"><span class="lbl">行きやすさ</span></div>
   </div>
 
@@ -220,6 +221,7 @@ const RAD=Math.PI/180, proj=(lat,lon)=>[GEO.proj.tx+GEO.proj.scale*lon*RAD, GEO.
 const TYPES = {dashi:'山車・曳山',mikoshi:'神輿',odori:'踊り',akari:'灯り',yuki:'雪',sake:'酒・ビール',tsuna:'綱引き',hanabi:'花火',hi:'火祭り'};
 const MARKS = {want:'行きたい',plan:'計画中',went:'行った'};
 const LV = {furatto:'ふらっと',keikaku:'計画して',honki:'本気の遠征'};
+const GENRES = ['祭り','踊り','花火','酒・ビール','行事'];
 const AX = {move:['移動',['日帰り圏','新幹線で1泊が目安','遠征（飛行機・長距離）']],stay:['宿',['宿なしでも行ける','早めに確保','争奪戦']],view:['観覧',['自由に見られる','混雑・場所取りあり','有料席の確保が必要']],body:['体力',['昼中心で楽','夜が本番・暑さ寒さ','深夜・早朝・極寒']]};
 // 近すぎるピンは festival_details.json の offset で左右にずらす（画面上のピクセル）
 const OFFSET = Object.fromEntries(D.rows.filter(r=>r.offset).map(r=>[r.id,r.offset]));
@@ -242,7 +244,7 @@ const rows = D.rows.map(r=>{
 }).sort((a,b)=>(a.nd?a.nd:Infinity)-(b.nd?b.nd:Infinity));
 function inBox(r,g){return g.id==='all' || (r.lon>=g.bb[0][0]&&r.lon<=g.bb[1][0]&&r.lat>=g.bb[0][1]&&r.lat<=g.bb[1][1]);}
 
-const S = {region:'all', month:0, level:'', onlyMarked:false, sel: rows.find(r=>r.nd && r.days>=0) || rows[0], marks:{}, photos:{}};
+const S = {region:'all', month:0, level:'', genre:'', onlyMarked:false, sel: rows.find(r=>r.nd && r.days>=0) || rows[0], marks:{}, photos:{}};
 let db=null, assets=null, canUpload=false, pidx=0, pidxFor=null;
 
 const fmt = d => `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日`;
@@ -271,6 +273,12 @@ $('months').appendChild(tg);
   const b=document.createElement('button'); b.type='button'; b.className='chip lvc '+k; b.id='lv-'+(k||'all');
   b.innerHTML=`${t}<span class="n">${n}</span>`; b.onclick=()=>{S.level=k;render();};
   $('levels').appendChild(b);
+});
+[['','すべて'],...GENRES.map(g=>[g,g])].forEach(([k,t])=>{
+  const n = k? rows.filter(r=>r.genre===k).length : rows.length;
+  const b=document.createElement('button'); b.type='button'; b.className='chip'; b.id='ge-'+(k||'all');
+  b.innerHTML=`${t}<span class="n">${n}</span>`; b.disabled = n===0 && !!k; b.onclick=()=>{S.genre=k;render();};
+  $('genres').appendChild(b);
 });
 
 /* ---------- legend ---------- */
@@ -321,7 +329,8 @@ const inRegion = r => S.region==='all' || inBox(r, D.regions.find(g=>g.id===S.re
 const inMonth = r => S.month===0 || r.months.includes(S.month);
 const inMarked = r => !S.onlyMarked || !!S.marks[r.id];
 const inLevel = r => !S.level || r.lv===S.level;
-const shown = r => inMonth(r) && inMarked(r) && inLevel(r);
+const inGenre = r => !S.genre || r.genre===S.genre;
+const shown = r => inMonth(r) && inMarked(r) && inLevel(r) && inGenre(r);
 
 /* ---------- render ---------- */
 function render(){
@@ -333,6 +342,7 @@ function render(){
   document.querySelectorAll('#months .chip:not(.toggle)').forEach(b=>b.setAttribute('aria-pressed',String(b.id==='mo-'+S.month)));
   tg.setAttribute('aria-pressed',String(S.onlyMarked));
   document.querySelectorAll('#levels .chip').forEach(b=>b.setAttribute('aria-pressed',String(b.id==='lv-'+(S.level||'all'))));
+  document.querySelectorAll('#genres .chip').forEach(b=>b.setAttribute('aria-pressed',String(b.id==='ge-'+(S.genre||'all'))));
   const vis = rows.filter(r=>inRegion(r)&&shown(r));
   if(!vis.includes(S.sel) && vis.length) S.sel = vis[0];
 
@@ -390,7 +400,8 @@ function easeBlock(r){
 }
 function renderDetail(){
   const r=S.sel, m=S.marks[r.id], pid=S.photos[r.id];
-  const route=`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent('つつじヶ丘駅')}&destination=${r.lat},${r.lon}&travelmode=transit`;
+  const dest = r.nearest_station ? encodeURIComponent(r.nearest_station+'駅') : `${r.lat},${r.lon}`;
+  const route=`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent('つつじヶ丘駅')}&destination=${dest}&travelmode=transit`;
   // 写真：自分でアップロードした1枚を先頭に、Commons の写真（クレジット付き）を続ける
   const pics=[...(pid?[{src:'/_blob/'+pid, own:true}]:[]), ...(r.photos||[]).map(p=>({src:p.url||p.file, c:p}))];
   if(pidxFor!==r.id){ pidx=0; pidxFor=r.id; }
@@ -410,7 +421,9 @@ function renderDetail(){
         <p class="where"><span class="typechip" style="background:var(--${r.season})">${glyph(r.type,14)}${TYPES[r.type]}</span>${esc(r.prefecture)} ${esc(r.city)}${r.check?'<span class="badge">要確認あり</span>':''}</p>
       </div>
       <p class="lead">${esc(r.lead)}</p>
-      <dl class="facts"><dt>時期</dt><dd>${esc(r.period)}</dd><dt>次回</dt><dd>${r.nd?`${fmt(r.nd)}（${cd(r.days)}）`:'未定'}</dd></dl>
+      <dl class="facts"><dt>時期</dt><dd>${esc(r.period)}</dd><dt>次回</dt><dd>${r.nd?`${fmt(r.nd)}（${cd(r.days)}）`:'未定'}</dd>
+        <dt>所要</dt><dd>目安${r.stay_days}日${r.best_time?`・見どころは${esc(r.best_time.split(';').join('・'))}`:''}</dd>
+        <dt>東京から</dt><dd>${esc(r.travel_hours_tokyo||'要確認')}${r.nearest_station?`（${esc(r.nearest_station)}駅）`:''}</dd></dl>
       ${easeBlock(r)}
       <div class="tips"><h3>楽しみ方のコツ</h3><ul>${(r.tips||[]).map(t=>`<li>${esc(t)}</li>`).join('')}</ul></div>
       <p class="trivia"><b>豆知識</b>${esc(r.trivia)}</p>
